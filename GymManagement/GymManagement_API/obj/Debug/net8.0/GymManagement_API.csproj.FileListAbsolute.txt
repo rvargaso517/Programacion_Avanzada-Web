@@ -1,0 +1,543 @@
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\appsettings.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\GymManagement_API.staticwebassets.endpoints.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\GymManagement_API.exe
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\GymManagement_API.deps.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\GymManagement_API.runtimeconfig.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\GymManagement_API.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\GymManagement_API.pdb
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Dapper.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.Internal.Logging.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\GymManagement_API.csproj.AssemblyReference.cache
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\GymManagement_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\GymManagement_API.AssemblyInfoInputs.cache
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\GymManagement_API.AssemblyInfo.cs
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\GymManagement_API.csproj.CoreCompileInputs.cache
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\GymManagement_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\GymManagement_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\scopedcss\bundle\GymManagement_API.styles.css
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\GymManag.9046F5C9.Up2Date
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\GymManagement_API.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\refint\GymManagement_API.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\GymManagement_API.pdb
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\GymManagement_API.genruntimeconfig.cache
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\GymManagement_API\obj\Debug\net8.0\ref\GymManagement_API.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\appsettings.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.staticwebassets.endpoints.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.exe
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.deps.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.runtimeconfig.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.pdb
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Dapper.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.Internal.Logging.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.csproj.AssemblyReference.cache
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.AssemblyInfoInputs.cache
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.AssemblyInfo.cs
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.csproj.CoreCompileInputs.cache
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\scopedcss\bundle\GymManagement_API.styles.css
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManag.9046F5C9.Up2Date
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\refint\GymManagement_API.dll
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.pdb
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.genruntimeconfig.cache
+C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\ref\GymManagement_API.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.staticwebassets.endpoints.json
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\appsettings.json
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.exe
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.deps.json
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.runtimeconfig.json
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.pdb
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Dapper.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.Internal.Logging.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.csproj.AssemblyReference.cache
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.AssemblyInfoInputs.cache
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.AssemblyInfo.cs
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.csproj.CoreCompileInputs.cache
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\scopedcss\bundle\GymManagement_API.styles.css
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManag.9046F5C9.Up2Date
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\refint\GymManagement_API.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.pdb
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.genruntimeconfig.cache
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\ref\GymManagement_API.dll
+C:\Users\soportetecnico\Downloads\proyecto-gym-web (2)\proyecto-gym-web\proyecto-gym-web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\BCrypt-Net-Next.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\appsettings.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.staticwebassets.endpoints.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.exe
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.deps.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.runtimeconfig.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.pdb
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\BCrypt-Net-Next.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Dapper.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.Internal.Logging.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.csproj.AssemblyReference.cache
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.AssemblyInfoInputs.cache
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.AssemblyInfo.cs
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.csproj.CoreCompileInputs.cache
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\scopedcss\bundle\GymManagement_API.styles.css
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManag.9046F5C9.Up2Date
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\refint\GymManagement_API.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.pdb
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.genruntimeconfig.cache
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\ref\GymManagement_API.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\appsettings.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.staticwebassets.endpoints.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.exe
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.deps.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.runtimeconfig.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.pdb
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\BCrypt-Net-Next.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Dapper.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.Internal.Logging.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.csproj.AssemblyReference.cache
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.AssemblyInfoInputs.cache
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.AssemblyInfo.cs
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.csproj.CoreCompileInputs.cache
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\scopedcss\bundle\GymManagement_API.styles.css
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManag.9046F5C9.Up2Date
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\refint\GymManagement_API.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.pdb
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.genruntimeconfig.cache
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\ref\GymManagement_API.dll
+C:\Users\XPC\OneDrive\Universidad\Programacion avanzada web\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.staticwebassets.endpoints.json
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\appsettings.json
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.exe
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.deps.json
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.runtimeconfig.json
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.pdb
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\BCrypt-Net-Next.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Dapper.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.Internal.Logging.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.csproj.AssemblyReference.cache
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.AssemblyInfoInputs.cache
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.AssemblyInfo.cs
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\scopedcss\bundle\GymManagement_API.styles.css
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManag.9046F5C9.Up2Date
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\refint\GymManagement_API.dll
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.pdb
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.genruntimeconfig.cache
+C:\Users\Usuario\Downloads\GymManagemenQt\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\ref\GymManagement_API.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\appsettings.json
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.staticwebassets.endpoints.json
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.exe
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.deps.json
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.runtimeconfig.json
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\GymManagement_API.pdb
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\BCrypt-Net-Next.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Dapper.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Data.SqlClient.Internal.Logging.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.csproj.AssemblyReference.cache
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.AssemblyInfoInputs.cache
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.AssemblyInfo.cs
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.csproj.CoreCompileInputs.cache
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\scopedcss\bundle\GymManagement_API.styles.css
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\swae.build.ex.cache
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManag.9046F5C9.Up2Date
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\refint\GymManagement_API.dll
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.pdb
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\GymManagement_API.genruntimeconfig.cache
+C:\Users\david\Downloads\GymManagement\GymManagement\GymManagement\GymManagement\GymManagement_API\obj\Debug\net8.0\ref\GymManagement_API.dll

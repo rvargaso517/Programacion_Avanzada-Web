@@ -1,0 +1,69 @@
+@model Tarea1.Models.Dtos.OportunidadDto
+@{
+    Layout = ViewData["Layout"] as string;
+    ViewData["Title"] = "Eliminar Oportunidad";
+}
+
+<div class="container py-5 my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow border-0 bg-dark text-white p-4">
+                <h3 class="fw-bold mb-3 text-white border-bottom border-danger pb-2">Confirmar Eliminación</h3>
+                
+                <div class="alert alert-warning text-dark">
+                    <i class="fa fa-exclamation-triangle"></i> <strong>Atención:</strong> Está a punto de eliminar permanentemente esta oportunidad comercial.
+                </div>
+
+                <p class="fs-5">¿Está seguro de que desea eliminar la oportunidad <strong>@Model.Titulo</strong>?</p>
+
+                <div class="table-responsive mb-4">
+                    <table class="table table-dark table-borderless">
+                        <tr>
+                            <td class="text-muted w-33">Cliente:</td>
+                            <td>@Model.ClienteNombreCompleto</td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">Monto Estimado:</td>
+                            <td class="text-success fw-bold">@Model.MontoEstimado.ToString("C2")</td>
+                        </tr>
+                        <tr>
+                            <td class="text-muted">Etapa:</td>
+                            <td>
+                                @switch (Model.Etapa)
+                                {
+                                    case "Nuevo":
+                                        <span class="badge bg-info">Nuevo</span>
+                                        break;
+                                    case "En Contacto":
+                                        <span class="badge bg-warning text-dark">En Contacto</span>
+                                        break;
+                                    case "Propuesta":
+                                        <span class="badge bg-primary">Propuesta</span>
+                                        break;
+                                    case "Ganada":
+                                        <span class="badge bg-success">Ganada</span>
+                                        break;
+                                    case "Perdida":
+                                        <span class="badge bg-danger">Perdida</span>
+                                        break;
+                                    default:
+                                        <span class="badge bg-secondary">@Model.Etapa</span>
+                                        break;
+                                }
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <form asp-action="Delete" method="post">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" asp-for="IdOportunidad" />
+                    <div class="d-flex justify-content-end gap-2">
+                        <a asp-action="Index" class="btn btn-outline-light">Cancelar</a>
+                        <button type="submit" class="btn btn-danger px-4">Eliminar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

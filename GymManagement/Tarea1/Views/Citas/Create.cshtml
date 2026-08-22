@@ -1,0 +1,81 @@
+@model GymManagement_WEB.Models.RegistrarCitaRequestModel
+@using Microsoft.AspNetCore.Http
+@{
+    ViewData["Title"] = "Nueva Cita";
+    Layout = ViewData["Layout"] as string;
+    var isStaff = Context.Session.GetInt32("Rol") == 1 || Context.Session.GetInt32("Rol") == 2 || Context.Session.GetInt32("Rol") == 3;
+}
+
+<div class="@(isStaff ? "container-fluid" : "container py-5 my-5")">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow border-0 @(isStaff ? "" : "bg-dark text-white p-4")">
+                <div class="card-header bg-primary text-white rounded-top">
+                    <h4 class="mb-0 fw-bold">
+                        <i class="fa fa-calendar-plus-o"></i> Nueva Cita
+                    </h4>
+                </div>
+                <div class="card-body @(isStaff ? "" : "bg-dark text-white")">
+                    @if (ViewBag.Mensaje != null)
+                    {
+                        <div class="alert alert-danger">
+                            @ViewBag.Mensaje
+                        </div>
+                    }
+
+                    <form asp-action="Create" method="post">
+                        @if (isStaff)
+                        {
+                            <div class="mb-3">
+                                <label asp-for="IdCliente" class="form-label fw-bold">Cliente</label>
+                                <select asp-for="IdCliente" asp-items="ViewBag.Clientes" class="form-select bg-light text-dark">
+                                    <option value="">Seleccione un cliente...</option>
+                                </select>
+                            </div>
+                        }
+                        else
+                        {
+                            <!-- Si es cliente normal, el backend o el controlador debería pre-asignar su ID de cliente.
+                                 Para evitar fallar las validaciones, lo dejamos oculto o seleccionamos el primero disponible. -->
+                            <input type="hidden" asp-for="IdCliente" value="1" />
+                        }
+
+                        <div class="mb-3">
+                            <label asp-for="Titulo" class="form-label fw-bold">Título / Clase</label>
+                            <input asp-for="Titulo" class="form-control @(isStaff ? "bg-white text-dark" : "bg-secondary text-white border-0")" placeholder="Ej: Spinning, Yoga, Cardio..." />
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Descripcion" class="form-label fw-bold">Descripción</label>
+                            <textarea asp-for="Descripcion" rows="4" class="form-control @(isStaff ? "bg-white text-dark" : "bg-secondary text-white border-0")" placeholder="Notas adicionales..."></textarea>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <label asp-for="Fecha" class="form-label fw-bold">Fecha</label>
+                                <input asp-for="Fecha" type="date" class="form-control @(isStaff ? "bg-white text-dark" : "bg-secondary text-white border-0")" />
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label asp-for="HoraInicio" class="form-label fw-bold">Hora Inicio</label>
+                                <input asp-for="HoraInicio" type="time" class="form-control @(isStaff ? "bg-white text-dark" : "bg-secondary text-white border-0")" />
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label asp-for="HoraFin" class="form-label fw-bold">Hora Fin</label>
+                                <input asp-for="HoraFin" type="time" class="form-control @(isStaff ? "bg-white text-dark" : "bg-secondary text-white border-0")" />
+                            </div>
+                        </div>
+
+                        <hr class="@(isStaff ? "" : "border-secondary")" />
+
+                        <div class="text-end gap-2 d-flex justify-content-end">
+                            <a asp-action="Index" class="btn btn-outline-light">Cancelar</a>
+                            <button type="submit" class="btn btn-success px-4">
+                                <i class="fa fa-save"></i> Guardar Cita
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

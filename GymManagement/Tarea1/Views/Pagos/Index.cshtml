@@ -1,0 +1,250 @@
+@model IEnumerable<Tarea1.Models.Dtos.PagoDto>
+@using Microsoft.AspNetCore.Http
+
+@{
+    Layout = ViewData["Layout"] as string;
+    ViewData["Title"] = "Historial de Pagos";
+
+    var puedeAdministrar =
+        Context.Session.GetInt32("Rol") == 1 ||
+        Context.Session.GetInt32("Rol") == 2;
+}
+
+<div class="container pagos-container">
+    <div class="pagos-header">
+
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+
+            <div>
+
+                <h2>
+                    <i class="fa fa-credit-card me-2"></i>
+                    Historial de Pagos
+                </h2>
+
+                <p>
+                    Consulta el historial de pagos realizados por los clientes.
+                </p>
+
+            </div>
+
+            @if (puedeAdministrar)
+            {
+                <a asp-action="Create"
+                   class="btn btn-primary btn-registrar">
+
+                    <i class="fa fa-credit-card me-2"></i>
+                    Registrar Pago
+
+                </a>
+            }
+
+        </div>
+
+    </div>
+
+    <div class="pagos-card">
+
+        <div class="tabla-header">
+
+            <h5>
+
+                <i class="fa fa-list me-2 text-primary"></i>
+
+                Lista de pagos
+
+            </h5>
+
+            <span class="cantidad-pagos">
+
+                @Model.Count() pagos
+
+            </span>
+
+        </div>
+
+
+        <div class="table-responsive">
+
+            <table class="table pagos-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Cliente</th>
+
+                        <th>Membresía / Plan</th>
+
+                        <th>Monto</th>
+
+                        <th>Fecha de Pago</th>
+
+                        <th>Método de Pago</th>
+
+                        <th>Estado</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    @if (!Model.Any())
+                    {
+                        <tr>
+
+                            <td colspan="6">
+
+                                <div class="empty-state">
+
+                                    <div class="empty-icon">
+
+                                        <i class="fa fa-credit-card"></i>
+
+                                    </div>
+
+                                    <h5>
+                                        No hay pagos registrados
+                                    </h5>
+
+                                    <p>
+                                        No se encontraron registros de pagos.
+                                    </p>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+                    }
+
+
+                    @foreach (var p in Model)
+                    {
+                        <tr>
+
+                            <td>
+
+                                <span class="cliente-icon">
+
+                                    <i class="fa fa-user"></i>
+
+                                </span>
+
+                                <span class="cliente-nombre">
+
+                                    @p.ClienteNombre
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                @if (string.IsNullOrEmpty(p.PlanNombre))
+                                {
+                                    <span class="pago-general">
+
+                                        <i class="fa fa-file-text-o me-1"></i>
+
+                                        Pago General / Sencillo
+
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="plan-pago">
+
+                                        <i class="fa fa-star"></i>
+
+                                        Plan: @p.PlanNombre
+
+                                    </span>
+                                }
+
+                            </td>
+
+                            <td>
+
+                                <span class="monto">
+
+                                    ₡@p.Monto.ToString("N2")
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="fecha-pago">
+
+                                    <i class="fa fa-calendar"></i>
+
+                                    @p.FechaPago.ToString("dd/MM/yyyy hh:mm tt")
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="metodo-pago">
+
+                                    <i class="fa fa-money"></i>
+
+                                    @p.MetodoPago
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                @if (p.Estado == "Pagado")
+                                {
+                                    <span class="estado estado-pagado">
+
+                                        <i class="fa fa-circle"></i>
+
+                                        @p.Estado
+
+                                    </span>
+                                }
+                                else if (p.Estado == "Reversado" ||
+                                         p.Estado == "Cancelado")
+                                {
+                                    <span class="estado estado-reversado">
+
+                                        <i class="fa fa-circle"></i>
+
+                                        @p.Estado
+
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="estado estado-otro">
+
+                                        <i class="fa fa-circle"></i>
+
+                                        @p.Estado
+
+                                    </span>
+                                }
+
+                            </td>
+
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,82 @@
+@model Tarea1.Models.Entities.Rutina
+@{
+    Layout = ViewData["Layout"] as string;
+    ViewData["Title"] = "Detalle de Rutina";
+    var detalles = ViewBag.Detalles as IEnumerable<Tarea1.Models.Entities.DetalleRutina> ?? new List<Tarea1.Models.Entities.DetalleRutina>();
+    var detallesAgrupados = detalles.GroupBy(d => d.DiaSemana);
+}
+
+<div class="container my-5" style="max-width: 900px;">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="fw-bold text-dark">@Model.NombreRutina</h1>
+            <p class="text-muted">Asignada el @Model.FechaAsignacion.ToString("dd MMMM yyyy") por el entrenador <strong>@Model.EntrenadorNombre</strong></p>
+        </div>
+        <div>
+            <a asp-action="Index" asp-route-idCliente="@Model.IdCliente" class="btn btn-outline-secondary rounded-pill px-4 fw-bold">
+                Volver
+            </a>
+        </div>
+    </div>
+
+    <div class="card border-0 shadow-sm rounded-4 mb-4">
+        <div class="card-body p-4">
+            <h5 class="fw-bold text-warning mb-2">Indicaciones Generales</h5>
+            <p class="mb-0 text-dark" style="white-space: pre-wrap;">@(string.IsNullOrEmpty(Model.Descripcion) ? "Sin indicaciones específicas." : Model.Descripcion)</p>
+        </div>
+    </div>
+
+    @if (!detalles.Any())
+    {
+        <div class="alert alert-info rounded-3 text-center">
+            Esta rutina no contiene ejercicios registrados.
+        </div>
+    }
+    else
+    {
+        @foreach (var grupo in detallesAgrupados)
+        {
+            <div class="card border-0 shadow-sm rounded-4 mb-4 overflow-hidden">
+                <div class="bg-warning text-dark px-4 py-3">
+                    <h4 class="fw-bold mb-0">@grupo.Key</h4>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th class="ps-4 py-3" style="width: 40%;">Ejercicio</th>
+                                    <th class="py-3 text-center" style="width: 15%;">Series</th>
+                                    <th class="py-3 text-center" style="width: 20%;">Repeticiones</th>
+                                    <th class="py-3 text-center" style="width: 25%;">Demostración</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var ej in grupo)
+                                {
+                                    <tr>
+                                        <td class="ps-4 py-3 fw-bold">@ej.Ejercicio</td>
+                                        <td class="py-3 text-center text-muted">@ej.Series</td>
+                                        <td class="py-3 text-center text-muted">@ej.Repeticiones</td>
+                                        <td class="py-3 text-center">
+                                            @if (!string.IsNullOrEmpty(ej.VideoUrl))
+                                            {
+                                                <a href="@ej.VideoUrl" target="_blank" class="btn btn-outline-danger btn-sm rounded-pill px-3">
+                                                    <i class="fa fa-play-circle me-1"></i> Ver Vídeo
+                                                </a>
+                                            }
+                                            else
+                                            {
+                                                <span class="text-muted small">Sin vídeo</span>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>

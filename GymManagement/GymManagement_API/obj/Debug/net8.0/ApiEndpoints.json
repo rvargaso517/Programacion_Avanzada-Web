@@ -1,0 +1,494 @@
+[
+  {
+    "ContainingType": "GymManagement_API.Controllers.CitasController",
+    "Method": "ActualizarCita",
+    "RelativePath": "api/Citas/ActualizarCita",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "GymManagement_API.Models.ActualizarCitaRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.CitasController",
+    "Method": "ConsultarCita",
+    "RelativePath": "api/Citas/ConsultarCita/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.CitasController",
+    "Method": "ConsultarCitas",
+    "RelativePath": "api/Citas/ConsultarCitas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.CitasController",
+    "Method": "EliminarCita",
+    "RelativePath": "api/Citas/EliminarCita/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.CitasController",
+    "Method": "RegistrarCita",
+    "RelativePath": "api/Citas/RegistrarCita",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "GymManagement_API.Models.RegistrarCitaRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.ClientesController",
+    "Method": "ActualizarCliente",
+    "RelativePath": "api/Clientes/ActualizarCliente",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GymManagement_API.Models.ActualizarClienteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.ClientesController",
+    "Method": "CrearCliente",
+    "RelativePath": "api/Clientes/CrearCliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GymManagement_API.Models.CrearClienteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.ClientesController",
+    "Method": "EliminarCliente",
+    "RelativePath": "api/Clientes/EliminarCliente/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.ClientesController",
+    "Method": "ListarClientes",
+    "RelativePath": "api/Clientes/ListarClientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "buscar",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "estado",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.ClientesController",
+    "Method": "ObtenerCliente",
+    "RelativePath": "api/Clientes/ObtenerCliente/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.ClientesController",
+    "Method": "ObtenerClientePorCedula",
+    "RelativePath": "api/Clientes/ObtenerClientePorCedula/{cedula}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cedula",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.HomeController",
+    "Method": "IniciarSesionAPI",
+    "RelativePath": "api/Home/IniciarSesionAPI",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "GymManagement_API.Models.InicioSesionRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.HomeController",
+    "Method": "RegistrarClienteAPI",
+    "RelativePath": "api/Home/RegistrarClienteAPI",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "GymManagement_API.Models.RegistroUsuarioRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.MembresiasController",
+    "Method": "ActualizarMembresia",
+    "RelativePath": "api/Membresias/ActualizarMembresia",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GymManagement_API.Models.ActualizarMembresiaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.MembresiasController",
+    "Method": "CrearMembresia",
+    "RelativePath": "api/Membresias/CrearMembresia",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GymManagement_API.Models.CrearMembresiaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.MembresiasController",
+    "Method": "EliminarMembresia",
+    "RelativePath": "api/Membresias/EliminarMembresia/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.MembresiasController",
+    "Method": "ListarMembresias",
+    "RelativePath": "api/Membresias/ListarMembresias",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.MembresiasController",
+    "Method": "ObtenerMembresia",
+    "RelativePath": "api/Membresias/ObtenerMembresia/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.OportunidadesController",
+    "Method": "ActualizarOportunidad",
+    "RelativePath": "api/Oportunidades/ActualizarOportunidad",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GymManagement_API.Models.ActualizarOportunidadRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.OportunidadesController",
+    "Method": "CrearOportunidad",
+    "RelativePath": "api/Oportunidades/CrearOportunidad",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GymManagement_API.Models.CrearOportunidadRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.OportunidadesController",
+    "Method": "EliminarOportunidad",
+    "RelativePath": "api/Oportunidades/EliminarOportunidad/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.OportunidadesController",
+    "Method": "ListarOportunidades",
+    "RelativePath": "api/Oportunidades/ListarOportunidades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "buscar",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "etapa",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "idCliente",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "estado",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.OportunidadesController",
+    "Method": "ObtenerOportunidad",
+    "RelativePath": "api/Oportunidades/ObtenerOportunidad/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.PagosController",
+    "Method": "CrearPago",
+    "RelativePath": "api/Pagos/CrearPago",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GymManagement_API.Models.CrearPagoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.PagosController",
+    "Method": "ListarPagos",
+    "RelativePath": "api/Pagos/ListarPagos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.PagosController",
+    "Method": "ObtenerPago",
+    "RelativePath": "api/Pagos/ObtenerPago/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.PlanesController",
+    "Method": "ActualizarPlan",
+    "RelativePath": "api/Planes/ActualizarPlan",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GymManagement_API.Models.ActualizarPlanRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.PlanesController",
+    "Method": "CrearPlan",
+    "RelativePath": "api/Planes/CrearPlan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "GymManagement_API.Models.CrearPlanRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.PlanesController",
+    "Method": "EliminarPlan",
+    "RelativePath": "api/Planes/EliminarPlan/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.PlanesController",
+    "Method": "ListarPlanes",
+    "RelativePath": "api/Planes/ListarPlanes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GymManagement_API.Controllers.PlanesController",
+    "Method": "ObtenerPlan",
+    "RelativePath": "api/Planes/ObtenerPlan/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

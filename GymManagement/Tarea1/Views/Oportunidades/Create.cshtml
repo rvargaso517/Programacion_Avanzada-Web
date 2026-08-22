@@ -1,0 +1,73 @@
+@model Tarea1.Models.Dtos.CrearOportunidadRequest
+@{
+    Layout = ViewData["Layout"] as string;
+    ViewData["Title"] = "Nueva Oportunidad";
+}
+
+<div class="container py-5 my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow border-0 bg-dark text-white p-4">
+                <h3 class="fw-bold mb-3 text-white border-bottom border-secondary pb-2">Nueva Oportunidad Comercial</h3>
+                
+                <form asp-action="Create" method="post">
+                    @Html.AntiForgeryToken()
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="IdCliente" class="form-label">Cliente <span class="text-danger">*</span></label>
+                        <select asp-for="IdCliente" class="form-select bg-secondary text-white border-0" asp-items="ViewBag.Clientes">
+                            <option value="">-- Seleccione un Cliente --</option>
+                        </select>
+                        <span asp-validation-for="IdCliente" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Titulo" class="form-label">Título de la Oportunidad <span class="text-danger">*</span></label>
+                        <input asp-for="Titulo" class="form-control bg-secondary text-white border-0" placeholder="Ej: Membresía VIP Trimestral" />
+                        <span asp-validation-for="Titulo" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Descripcion" class="form-label">Descripción / Detalles</label>
+                        <textarea asp-for="Descripcion" rows="3" class="form-control bg-secondary text-white border-0" placeholder="Ej: Cliente interesado en clases de spinning..."></textarea>
+                        <span asp-validation-for="Descripcion" class="text-danger"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="MontoEstimado" class="form-label">Monto Estimado (₡) <span class="text-danger">*</span></label>
+                            <input asp-for="MontoEstimado" type="number" step="0.01" class="form-control bg-secondary text-white border-0" placeholder="Ej: 54000" />
+                            <span asp-validation-for="MontoEstimado" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Etapa" class="form-label">Etapa <span class="text-danger">*</span></label>
+                            <select asp-for="Etapa" class="form-select bg-secondary text-white border-0" asp-items="ViewBag.Etapas"></select>
+                            <span asp-validation-for="Etapa" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="FechaCierre" class="form-label">Fecha de Cierre Estimada</label>
+                        <input asp-for="FechaCierre" type="date" class="form-control bg-secondary text-white border-0" />
+                        <span asp-validation-for="FechaCierre" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-4 form-check form-switch">
+                        <input asp-for="Estado" type="checkbox" class="form-check-input" checked />
+                        <label asp-for="Estado" class="form-check-label ms-2">Oportunidad Activa</label>
+                    </div>
+
+                    <div class="d-flex justify-content-end gap-2">
+                        <a asp-action="Index" class="btn btn-outline-light">Cancelar</a>
+                        <button type="submit" class="btn btn-primary px-4">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

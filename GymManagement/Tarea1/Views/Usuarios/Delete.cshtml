@@ -1,0 +1,36 @@
+@model Tarea1.Models.Dtos.UsuarioDto
+@{
+    ViewData["Title"] = "Eliminar Usuario";
+}
+
+<div class="container py-5 my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-4">
+                    <h3 class="fw-bold mb-3 text-danger">Eliminar Usuario</h3>
+                    <p class="text-muted">¿Estás seguro de que deseas eliminar este usuario? Esta acción no se puede deshacer.</p>
+
+                    <dl class="row mb-4">
+                        <dt class="col-sm-4">Nombre</dt>
+                        <dd class="col-sm-8">@Model.Nombre</dd>
+
+                        <dt class="col-sm-4">Correo</dt>
+                        <dd class="col-sm-8">@Model.Correo</dd>
+
+                        <dt class="col-sm-4">Rol</dt>
+                        <dd class="col-sm-8">@Model.RolNombre</dd>
+                    </dl>
+
+                    <form method="post" asp-action="Delete">
+                        <input type="hidden" name="id" value="@Model.IdUsuario" />
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-danger">Sí, eliminar</button>
+                            <a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

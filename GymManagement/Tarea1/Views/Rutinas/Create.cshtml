@@ -1,0 +1,152 @@
+@{
+    Layout = ViewData["Layout"] as string;
+    ViewData["Title"] = "Diseñar Rutina";
+    var cliente = ViewBag.Cliente as Tarea1.Models.Entities.Cliente;
+}
+
+<div class="container my-5" style="max-width: 800px;">
+    <div class="mb-4">
+        <h1 class="fw-bold text-dark">Diseñar Rutina</h1>
+        <p class="text-muted">Asignando rutina para: <strong class="text-dark">@cliente?.Nombre @cliente?.Apellido</strong></p>
+    </div>
+
+    <form asp-action="Create" method="post" class="needs-validation" novalidate>
+        <input type="hidden" name="idCliente" value="@cliente?.IdCliente" />
+
+        <div class="card border-0 shadow-sm rounded-4 mb-4">
+            <div class="card-body p-4">
+                <h4 class="fw-bold mb-3">Información General</h4>
+                <div class="mb-3">
+                    <label for="nombreRutina" class="form-label fw-semibold">Nombre de la Rutina</label>
+                    <input type="text" id="nombreRutina" name="nombreRutina" class="form-control" placeholder="Ej. Rutina de Fuerza A, Hipertrofia Pecho/Tríceps" required />
+                </div>
+                <div class="mb-3">
+                    <label for="descripcion" class="form-label fw-semibold">Descripción / Indicaciones</label>
+                    <textarea id="descripcion" name="descripcion" class="form-control" rows="3" placeholder="Ej. Calentar 10 minutos en caminadora. Mantener buena técnica en cada serie."></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="card border-0 shadow-sm rounded-4 mb-4">
+            <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="fw-bold mb-0">Ejercicios y Series</h4>
+                    <button type="button" id="btnAgregarEjercicio" class="btn btn-warning rounded-pill px-3 fw-bold btn-sm">
+                        + Agregar Ejercicio
+                    </button>
+                </div>
+
+                <div id="contenedorEjercicios">
+                    <div class="row g-2 mb-3 ejercicio-row align-items-end">
+                        <div class="col-md-2">
+                            <label class="form-label small fw-semibold">Día</label>
+                            <select name="ejercicios[0].DiaSemana" class="form-select" required>
+                                <option value="Lunes">Lunes</option>
+                                <option value="Martes">Martes</option>
+                                <option value="Miércoles">Miércoles</option>
+                                <option value="Jueves">Jueves</option>
+                                <option value="Viernes">Viernes</option>
+                                <option value="Sábado">Sábado</option>
+                                <option value="Domingo">Domingo</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label small fw-semibold">Ejercicio</label>
+                            <input type="text" name="ejercicios[0].Ejercicio" class="form-control" placeholder="Ej. Sentadillas" required />
+                        </div>
+                        <div class="col-md-2">
+                            <label class="form-label small fw-semibold">Series</label>
+                            <input type="number" name="ejercicios[0].Series" class="form-control" placeholder="4" required min="1" />
+                        </div>
+                        <div class="col-md-2">
+                            <label class="form-label small fw-semibold">Repeticiones</label>
+                            <input type="text" name="ejercicios[0].Repeticiones" class="form-control" placeholder="12" required />
+                        </div>
+                        <div class="col-md-2">
+                            <label class="form-label small fw-semibold">Vídeo (URL)</label>
+                            <input type="url" name="ejercicios[0].VideoUrl" class="form-control" placeholder="https://..." />
+                        </div>
+                        <div class="col-md-1">
+                            <button type="button" class="btn btn-outline-danger w-100 btn-eliminar-ejercicio" style="margin-top: 32px;">
+                                <i class="fa fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-end gap-2">
+            <a asp-action="Index" asp-route-idCliente="@cliente?.IdCliente" class="btn btn-outline-secondary rounded-pill px-4 fw-bold">
+                Cancelar
+            </a>
+            <button type="submit" class="btn btn-warning rounded-pill px-4 fw-bold">
+                Guardar Rutina
+            </button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        let index = 1;
+        document.getElementById('btnAgregarEjercicio').addEventListener('click', function () {
+            const container = document.getElementById('contenedorEjercicios');
+            const row = document.createElement('div');
+            row.className = 'row g-2 mb-3 ejercicio-row align-items-end';
+            row.innerHTML = `
+                <div class="col-md-2">
+                    <select name="ejercicios[${index}].DiaSemana" class="form-select" required>
+                        <option value="Lunes">Lunes</option>
+                        <option value="Martes">Martes</option>
+                        <option value="Miércoles">Miércoles</option>
+                        <option value="Jueves">Jueves</option>
+                        <option value="Viernes">Viernes</option>
+                        <option value="Sábado">Sábado</option>
+                        <option value="Domingo">Domingo</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" name="ejercicios[${index}].Ejercicio" class="form-control" placeholder="Ej. Press Banca" required />
+                </div>
+                <div class="col-md-2">
+                    <input type="number" name="ejercicios[${index}].Series" class="form-control" placeholder="4" required min="1" />
+                </div>
+                <div class="col-md-2">
+                    <input type="text" name="ejercicios[${index}].Repeticiones" class="form-control" placeholder="10" required />
+                </div>
+                <div class="col-md-2">
+                    <input type="url" name="ejercicios[${index}].VideoUrl" class="form-control" placeholder="https://..." />
+                </div>
+                <div class="col-md-1">
+                    <button type="button" class="btn btn-outline-danger w-100 btn-eliminar-ejercicio">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                </div>
+            `;
+            container.appendChild(row);
+            index++;
+            renombrarInputs();
+        });
+
+        document.getElementById('contenedorEjercicios').addEventListener('click', function (e) {
+            if (e.target.classList.contains('btn-eliminar-ejercicio') || e.target.closest('.btn-eliminar-ejercicio')) {
+                const row = e.target.closest('.ejercicio-row');
+                row.remove();
+                renombrarInputs();
+            }
+        });
+
+        function renombrarInputs() {
+            const rows = document.querySelectorAll('.ejercicio-row');
+            rows.forEach((row, i) => {
+                row.querySelector('select').name = `ejercicios[${i}].DiaSemana`;
+                row.querySelectorAll('input')[0].name = `ejercicios[${i}].Ejercicio`;
+                row.querySelectorAll('input')[1].name = `ejercicios[${i}].Series`;
+                row.querySelectorAll('input')[2].name = `ejercicios[${i}].Repeticiones`;
+                row.querySelectorAll('input')[3].name = `ejercicios[${i}].VideoUrl`;
+            });
+            index = rows.length;
+        }
+    </script>
+}

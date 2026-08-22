@@ -1,0 +1,178 @@
+﻿@using GymManagement_WEB.Models
+@model RegistroUsuarioModel
+
+
+@{
+    Layout = "_AccesoLayout";
+    ViewData["Title"] = "Registro";
+}
+<div class="card shadow-lg border-0 rounded-4">
+
+    <div class="card-body p-5">
+
+        <div class="text-center mb-4">
+
+            <img src="~/imagenes/logo.png" width="120" class="mb-3" />
+
+            <h2>Crear una Cuenta</h2>
+
+            <p class="text-muted">
+                Complete la información para registrarse.
+            </p>
+
+        </div>
+
+        @if (ViewBag.Mensaje != null)
+        {
+            <div class="alert alert-danger">
+                @ViewBag.Mensaje
+            </div>
+        }
+
+        <form asp-action="Registro"
+              asp-controller="Home"
+              method="post">
+
+            <div asp-validation-summary="ModelOnly"
+                 class="text-danger mb-3">
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 mb-3">
+
+                    <label asp-for="Nombre" class="form-label"></label>
+
+                    <input asp-for="Nombre"
+                           class="form-control" />
+
+                    <span asp-validation-for="Nombre"
+                          class="text-danger"></span>
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <label asp-for="Apellido" class="form-label"></label>
+
+                    <input asp-for="Apellido"
+                           class="form-control" />
+
+                    <span asp-validation-for="Apellido"
+                          class="text-danger"></span>
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <label asp-for="Cedula" class="form-label"></label>
+
+                    <input asp-for="Cedula"
+                           class="form-control" />
+
+                    <span asp-validation-for="Cedula"
+                          class="text-danger"></span>
+
+                </div>
+
+                <div class="col-md-6 mb-3">
+
+                    <label asp-for="Telefono" class="form-label"></label>
+
+                    <input asp-for="Telefono"
+                           class="form-control" />
+
+                    <span asp-validation-for="Telefono"
+                          class="text-danger"></span>
+
+                </div>
+
+                <div class="col-12 mb-3">
+
+                    <label asp-for="Correo" class="form-label"></label>
+
+                    <input asp-for="Correo"
+                           class="form-control" />
+
+                    <span asp-validation-for="Correo"
+                          class="text-danger"></span>
+
+                </div>
+
+                <div class="col-12 mb-3">
+
+                    <label asp-for="Direccion" class="form-label"></label>
+
+                    <input asp-for="Direccion"
+                           class="form-control" />
+
+                    <span asp-validation-for="Direccion"
+                          class="text-danger"></span>
+
+                </div>
+
+                <div class="col-md-6 mb-4">
+
+                    <label asp-for="Contrasenna" class="form-label">
+                        Contraseña
+                    </label>
+
+                    <input asp-for="Contrasenna"
+                           type="password"
+                           class="form-control" />
+
+                    <span asp-validation-for="Contrasenna"
+                          class="text-danger"></span>
+
+                </div>
+
+                <div class="col-md-6 mb-4">
+
+                    <label asp-for="ConfirmarContrasenna"
+                           class="form-label">
+                       Confirmar Contraseña
+                    </label>
+
+                    <input asp-for="ConfirmarContrasenna"
+                           type="password"
+                           class="form-control" />
+
+                    <span asp-validation-for="ConfirmarContrasenna"
+                          class="text-danger"></span>
+
+                </div>
+
+            </div>
+
+            <div class="d-grid">
+
+                <button type="submit"
+                        class="btn btn-warning btn-lg">
+
+                    Registrarse
+
+                </button>
+
+            </div>
+
+            <div class="text-center mt-4">
+
+                ¿Ya tienes una cuenta?
+
+                <a asp-action="Login"
+                   asp-controller="Home">
+                    Iniciar Sesión
+                </a>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Documentacion/">
+    <File Path="README.md" />
+    <File Path="Reporte_Procedimientos_Almacenados.md" />
+  </Folder>
+  <Folder Name="/BaseDeDatos/">
+    <File Path="GymManagement_API/Database/00_GymManagementDB_Completo.sql" />
+  </Folder>
+  <Project Path="GymManagement_API/GymManagement_API.csproj" Id="f21f6f51-2019-4d36-a761-48d8ff879177" />
+  <Project Path="Tarea1/GymManagement_WEB.csproj" />
+</Solution>

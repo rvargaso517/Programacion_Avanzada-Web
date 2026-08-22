@@ -1,0 +1,88 @@
+@model GymManagement_WEB.Models.ClienteModel
+@{
+    Layout = ViewData["Layout"] as string;
+    ViewData["Title"] = "Editar Cliente";
+}
+
+<div class="container py-5 my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+            <div class="card shadow border-0 bg-dark text-white p-4">
+                <h3 class="fw-bold mb-3 text-white border-bottom border-secondary pb-2">Editar Cliente</h3>
+
+                @if (ViewBag.Mensaje != null)
+                {
+                    <div class="alert alert-danger">
+                        @ViewBag.Mensaje
+                    </div>
+                }
+
+                <form asp-action="Edit" method="post">
+                    @Html.AntiForgeryToken()
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                    <input type="hidden" asp-for="IdCliente" />
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Nombre" class="form-label">Nombre <span class="text-danger">*</span></label>
+                            <input asp-for="Nombre" class="form-control bg-secondary text-white border-0" />
+                            <span asp-validation-for="Nombre" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Apellido" class="form-label">Apellido <span class="text-danger">*</span></label>
+                            <input asp-for="Apellido" class="form-control bg-secondary text-white border-0" />
+                            <span asp-validation-for="Apellido" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Cedula" class="form-label">Cédula <span class="text-danger">*</span></label>
+                            <input asp-for="Cedula" class="form-control bg-secondary text-white border-0" />
+                            <span asp-validation-for="Cedula" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Telefono" class="form-label">Teléfono</label>
+                            <input asp-for="Telefono" class="form-control bg-secondary text-white border-0" />
+                            <span asp-validation-for="Telefono" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Correo" class="form-label">Correo Electrónico</label>
+                            <input asp-for="Correo" type="email" class="form-control bg-secondary text-white border-0" />
+                            <span asp-validation-for="Correo" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Estado" class="form-label">Estado</label>
+                            <select asp-for="Estado" class="form-select bg-secondary text-white border-0">
+                                <option value="true">Activo</option>
+                                <option value="false">Inactivo</option>
+                            </select>
+                            <span asp-validation-for="Estado" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="Direccion" class="form-label">Dirección</label>
+                        <textarea asp-for="Direccion" rows="2" class="form-control bg-secondary text-white border-0"></textarea>
+                        <span asp-validation-for="Direccion" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-end gap-2">
+                        <a asp-action="Index" class="btn btn-outline-light">Cancelar</a>
+                        <button type="submit" class="btn btn-primary px-4">Guardar Cambios</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,28 @@
+@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<div class="container py-5">
+    <h1 class="text-danger">Ocurrió un error</h1>
+    <p class="lead">
+        No se pudo completar la operación. El detalle del error quedó registrado
+        y el administrador del sistema puede revisarlo.
+    </p>
+
+    @if (Model.ShowIdError)
+    {
+        <p>
+            <strong>Número de error:</strong> <code>@Model.IdError</code>
+            <br />
+            <small class="text-muted">Indique este número si necesita reportar el problema.</small>
+        </p>
+    }
+
+    @if (Model.ShowRequestId)
+    {
+        <p class="text-muted"><small><strong>Id de la solicitud:</strong> <code>@Model.RequestId</code></small></p>
+    }
+
+    <a class="btn btn-primary" asp-controller="Home" asp-action="Index">Volver al inicio</a>
+</div>

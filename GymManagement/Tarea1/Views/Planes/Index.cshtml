@@ -1,0 +1,243 @@
+@model IEnumerable<Tarea1.Models.Dtos.PlanDto>
+@using Microsoft.AspNetCore.Http
+
+@{
+    Layout = ViewData["Layout"] as string;
+    ViewData["Title"] = "Planes de Membresía";
+
+    var puedeAdministrar =
+        Context.Session.GetInt32("Rol") == 1 ||
+        Context.Session.GetInt32("Rol") == 2;
+}
+<div class="container planes-container">
+
+    <div class="planes-header">
+
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+
+            <div>
+
+                <h2>
+                    <i class="fa fa-list-alt me-2"></i>
+                    Planes de Membresía
+                </h2>
+
+                <p>
+                    Consulta y administra los planes disponibles para los clientes.
+                </p>
+
+            </div>
+
+            @if (puedeAdministrar)
+            {
+                <a asp-action="Create"
+                   class="btn btn-primary btn-nuevo-plan">
+
+                    <i class="fa fa-plus me-2"></i>
+                    Nuevo Plan
+
+                </a>
+            }
+
+        </div>
+
+    </div>
+
+    <div class="planes-card">
+
+
+        <div class="tabla-header">
+
+            <h5>
+                <i class="fa fa-tags me-2 text-primary"></i>
+                Lista de planes
+            </h5>
+
+            <span class="cantidad-planes">
+                @Model.Count() planes
+            </span>
+
+        </div>
+
+
+        <div class="table-responsive">
+
+            <table class="table planes-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Nombre</th>
+
+                        <th>Descripción</th>
+
+                        <th>Duración</th>
+
+                        <th>Precio</th>
+
+                        <th>Estado</th>
+
+                        @if (puedeAdministrar)
+                        {
+                            <th class="text-end">
+                                Acciones
+                            </th>
+                        }
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    @if (!Model.Any())
+                    {
+                        <tr>
+
+                            <td colspan="@(puedeAdministrar ? 6 : 5)">
+
+                                <div class="empty-state">
+
+                                    <div class="empty-icon">
+                                        <i class="fa fa-tags"></i>
+                                    </div>
+
+                                    <h5>
+                                        No hay planes de membresía
+                                    </h5>
+
+                                    <p>
+                                        No se encontraron planes registrados.
+                                    </p>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+                    }
+
+
+                    @foreach (var p in Model)
+                    {
+                        <tr>
+
+                            <td>
+
+                                <span class="plan-icon">
+                                    <i class="fa fa-star"></i>
+                                </span>
+
+                                <span class="plan-nombre">
+                                    @p.Nombre
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="plan-descripcion">
+                                    @p.Descripcion
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="duracion">
+
+                                    <i class="fa fa-calendar"></i>
+
+                                    @p.DuracionDias días
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="precio">
+
+                                    ₡@p.Precio.ToString("N2")
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                @if (p.Estado)
+                                {
+                                    <span class="estado estado-activo">
+
+                                        <i class="fa fa-circle"></i>
+
+                                        Activo
+
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="estado estado-inactivo">
+
+                                        <i class="fa fa-circle"></i>
+
+                                        Inactivo
+
+                                    </span>
+                                }
+
+                            </td>
+
+                            @if (puedeAdministrar)
+                            {
+                                <td>
+
+                                    <div class="acciones">
+
+                                        <a asp-action="Edit"
+                                           asp-route-id="@p.IdPlan"
+                                           class="btn btn-outline-info btn-accion"
+                                           title="Editar">
+
+                                            <i class="fa fa-pencil"></i>
+                                            Editar
+
+                                        </a>
+
+                                        <form asp-action="Delete"
+                                              asp-route-id="@p.IdPlan"
+                                              method="post"
+                                              class="d-inline"
+                                              onsubmit="return confirm('¿Está seguro de que desea eliminar este plan?');">
+
+                                            <button type="submit"
+                                                    class="btn btn-outline-danger btn-accion"
+                                                    title="Eliminar">
+
+                                                <i class="fa fa-trash"></i>
+                                                Eliminar
+
+                                            </button>
+
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            }
+
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>

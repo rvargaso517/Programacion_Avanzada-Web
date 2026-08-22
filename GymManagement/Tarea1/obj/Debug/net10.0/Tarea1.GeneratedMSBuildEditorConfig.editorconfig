@@ -1,0 +1,100 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EntryPointFilePath = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Tarea1
+build_property.RootNamespace = Tarea1
+build_property.ProjectDir = C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\Tarea1\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 10.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\soportetecnico\Documents\proyecto-gym-web\proyecto-gym-web\Tarea1\Tarea1\Tarea1
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Account/AccesoDenegado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc29EZW5lZ2Fkby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Account/RecuperarPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWN1cGVyYXJQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Citas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0YXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Shared/_AccesoLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BY2Nlc29MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-sifq1ul45m
+
+[C:/Users/soportetecnico/Documents/proyecto-gym-web/proyecto-gym-web/Tarea1/Tarea1/Tarea1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-nr3lewp12n

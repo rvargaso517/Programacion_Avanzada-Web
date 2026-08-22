@@ -1,0 +1,26 @@
+@using Microsoft.AspNetCore.Http
+@{
+    Layout = ViewData["Layout"] as string;
+    ViewData["Title"] = "Agenda";
+    var isStaff = Context.Session.GetInt32("Rol") == 1 || Context.Session.GetInt32("Rol") == 2 || Context.Session.GetInt32("Rol") == 3;
+}
+
+<div class="@(isStaff ? "container-fluid" : "container py-5 my-5")">
+    <div class="card shadow border-0 @(isStaff ? "" : "bg-dark text-white p-4")">
+        <div class="card-header d-flex justify-content-between align-items-center @(isStaff ? "bg-light text-dark" : "bg-dark border-secondary text-white")">
+            <h3 class="mb-0 fw-bold">
+                Agenda de Citas
+            </h3>
+            <a asp-action="Create" class="btn btn-primary">
+                <i class="fa fa-calendar-plus-o"></i> Nueva Cita
+            </a>
+        </div>
+        <div class="card-body bg-white text-dark rounded-bottom p-4">
+            <div id="calendar"></div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/citas.js"></script>
+}

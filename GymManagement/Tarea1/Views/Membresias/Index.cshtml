@@ -1,0 +1,338 @@
+@model IEnumerable<Tarea1.Models.Dtos.MembresiaDto>
+@using Microsoft.AspNetCore.Http
+
+@{
+    Layout = ViewData["Layout"] as string;
+    ViewData["Title"] = "Membresías de Clientes";
+
+    var puedeAdministrar =
+        Context.Session.GetInt32("Rol") == 1 ||
+        Context.Session.GetInt32("Rol") == 2;
+}
+
+
+<div class="container membresias-container">
+    <div class="membresias-header">
+
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+
+            <div>
+
+                @if (Context.Session.GetInt32("Rol") == 4)
+                {
+                    <h2>
+                        <i class="fa fa-id-card me-2"></i>
+                        Mi Membresía
+                    </h2>
+                    <p>
+                        Consulta los detalles de tu suscripción actual en el gimnasio.
+                    </p>
+                }
+                else
+                {
+                    <h2>
+                        <i class="fa fa-id-card me-2"></i>
+                        Membresías de Clientes
+                    </h2>
+                    <p>
+                        Consulta y administra las membresías de los clientes.
+                    </p>
+                }
+
+            </div>
+
+            @if (puedeAdministrar)
+            {
+                <a asp-action="Create"
+                   class="btn btn-primary btn-asignar">
+
+                    <i class="fa fa-user-plus me-2"></i>
+                    Asignar Membresía
+
+                </a>
+            }
+
+        </div>
+
+    </div>
+
+    @if (TempData["Exito"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show custom-alert"
+             role="alert">
+
+            <i class="fa fa-check-circle me-2"></i>
+
+            @TempData["Exito"]
+
+            <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="alert">
+            </button>
+
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show custom-alert"
+             role="alert">
+
+            <i class="fa fa-exclamation-circle me-2"></i>
+
+            @TempData["Error"]
+
+            <button type="button"
+                    class="btn-close"
+                    data-bs-dismiss="alert">
+            </button>
+
+        </div>
+    }
+
+    <div class="membresias-card">
+
+        <div class="tabla-header">
+
+            <h5>
+                <i class="fa fa-list me-2 text-primary"></i>
+                @(Context.Session.GetInt32("Rol") == 4 ? "Detalle de mi suscripción" : "Lista de membresías")
+            </h5>
+
+            <span class="cantidad-membresias">
+                @(Context.Session.GetInt32("Rol") == 4 ? "Activa" : $"{Model.Count()} registros")
+            </span>
+
+        </div>
+
+
+        <div class="table-responsive">
+
+            <table class="table membresias-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Cliente</th>
+
+                        <th>Plan</th>
+
+                        <th>Fecha de Inicio</th>
+
+                        <th>Fecha de Vencimiento</th>
+
+                        <th>Estado</th>
+
+                        @if (puedeAdministrar)
+                        {
+                            <th class="text-end">
+                                Acciones
+                            </th>
+                        }
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    @if (!Model.Any())
+                    {
+                        <tr>
+
+                            <td colspan="@(puedeAdministrar ? 6 : 5)">
+
+                                <div class="empty-state">
+
+                                    <div class="empty-icon">
+                                        <i class="fa fa-id-card-o"></i>
+                                    </div>
+
+                                    <h5>
+                                        No hay membresías
+                                    </h5>
+
+                                    <p>
+                                        No se encontraron asignaciones de membresía.
+                                    </p>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+                    }
+
+
+                    @foreach (var m in Model)
+                    {
+                        var daysLeft =
+                            (m.FechaFin - DateTime.Today).Days;
+
+                        <tr>
+
+                            <td>
+
+                                <span class="cliente-icon">
+                                    <i class="fa fa-user"></i>
+                                </span>
+
+                                <span class="cliente-nombre">
+                                    @m.ClienteNombre
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="plan-badge">
+
+                                    <i class="fa fa-star"></i>
+
+                                    @m.PlanNombre
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="fecha">
+
+                                    <i class="fa fa-calendar"></i>
+
+                                    @m.FechaInicio.ToString("dd/MM/yyyy")
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                <span class="fecha">
+
+                                    <i class="fa fa-calendar-check-o"></i>
+
+                                    @m.FechaFin.ToString("dd/MM/yyyy")
+
+                                </span>
+
+                            </td>
+
+                            <td>
+
+                                @{
+                                    if (!m.Estado)
+                                    {
+                                        <span class="estado estado-inactiva">
+
+                                            <i class="fa fa-circle"></i>
+
+                                            Inactiva
+
+                                        </span>
+                                    }
+                                    else if (daysLeft < 0)
+                                    {
+                                        <span class="estado estado-vencido">
+
+                                            <i class="fa fa-circle"></i>
+
+                                            Vencido (@Math.Abs(daysLeft) días)
+
+                                        </span>
+                                    }
+                                    else if (daysLeft <= 7)
+                                    {
+                                        <span class="estado estado-pronto">
+
+                                            <i class="fa fa-circle"></i>
+
+                                            Vence pronto (@daysLeft días)
+
+                                        </span>
+                                    }
+                                    else
+                                    {
+                                        <span class="estado estado-activo">
+
+                                            <i class="fa fa-circle"></i>
+
+                                            Al día (@daysLeft días)
+
+                                        </span>
+                                    }
+                                }
+
+                            </td>
+
+                            @if (puedeAdministrar)
+                            {
+                                <td>
+
+                                    <div class="acciones">
+
+                                        <form asp-action="EnviarRecordatorio"
+                                              asp-route-id="@m.IdMembresiaCliente"
+                                              method="post"
+                                              class="d-inline">
+
+                                            <button type="submit"
+                                                    class="btn btn-outline-info btn-accion"
+                                                    title="Enviar Recordatorio">
+
+                                                <i class="fa fa-envelope"></i>
+                                                Recordatorio
+
+                                            </button>
+
+                                        </form>
+
+                                        <a asp-controller="Pagos"
+                                           asp-action="Create"
+                                           asp-route-idCliente="@m.IdCliente"
+                                           asp-route-idMembresiaCliente="@m.IdMembresiaCliente"
+                                           class="btn btn-outline-success btn-accion"
+                                           title="Registrar Pago">
+
+                                            <i class="fa fa-money"></i>
+                                            Cobrar
+
+                                        </a>
+
+                                        <form asp-action="Delete"
+                                              asp-route-id="@m.IdMembresiaCliente"
+                                              method="post"
+                                              class="d-inline"
+                                              onsubmit="return confirm('¿Está seguro de que desea eliminar esta membresía?');">
+
+                                            <button type="submit"
+                                                    class="btn btn-outline-danger btn-accion"
+                                                    title="Eliminar">
+
+                                                <i class="fa fa-trash"></i>
+                                                Eliminar
+
+                                            </button>
+
+                                        </form>
+
+                                    </div>
+
+                                </td>
+                            }
+
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>

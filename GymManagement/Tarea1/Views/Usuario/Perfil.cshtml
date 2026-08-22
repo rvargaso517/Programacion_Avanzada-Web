@@ -1,0 +1,72 @@
+@model Tarea1.Models.Dtos.UsuarioDto
+@{
+    Layout = ViewData["Layout"] as string;
+    ViewData["Title"] = "Mi Perfil";
+}
+
+<div class="container py-5 my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow border-0 bg-dark text-white p-4">
+                <h3 class="fw-bold mb-3 text-white border-bottom border-secondary pb-2">Mi Perfil</h3>
+
+                @if (ViewBag.Exito != null)
+                {
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <i class="fa fa-check-circle me-2"></i>
+                        @ViewBag.Exito
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                }
+
+                @if (ViewBag.Error != null)
+                {
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <i class="fa fa-times-circle me-2"></i>
+                        @ViewBag.Error
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                }
+
+                <form asp-action="Perfil" method="post">
+                    @Html.AntiForgeryToken()
+
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre Completo <span class="text-danger">*</span></label>
+                        <input type="text" name="nombre" id="nombre" value="@Model.Nombre" class="form-control bg-secondary text-white border-0" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electrónico <span class="text-danger">*</span></label>
+                        <input type="email" name="correo" id="correo" value="@Model.Correo" class="form-control bg-secondary text-white border-0" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="rol" class="form-label">Rol del Usuario</label>
+                        <input type="text" id="rol" value="@Model.RolNombre" class="form-control bg-dark text-white border-secondary" readonly />
+                        <span class="text-muted"><small>El rol no puede ser modificado por el propio usuario.</small></span>
+                    </div>
+
+                    <hr class="border-secondary my-4" />
+
+                    <h5 class="fw-bold text-warning mb-3">Cambiar Contraseña (Opcional)</h5>
+                    <p class="text-muted"><small>Deje estos campos en blanco si no desea modificar su contraseña actual.</small></p>
+
+                    <div class="mb-3">
+                        <label for="nuevoPassword" class="form-label">Nueva Contraseña</label>
+                        <input type="password" name="nuevoPassword" id="nuevoPassword" class="form-control bg-secondary text-white border-0" placeholder="Mínimo 6 caracteres" />
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="confirmarPassword" class="form-label">Confirmar Nueva Contraseña</label>
+                        <input type="password" name="confirmarPassword" id="confirmarPassword" class="form-control bg-secondary text-white border-0" />
+                    </div>
+
+                    <div class="d-flex justify-content-end gap-2">
+                        <button type="submit" class="btn btn-primary px-4">Actualizar Perfil</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

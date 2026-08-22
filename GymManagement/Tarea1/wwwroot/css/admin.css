@@ -1,0 +1,1136 @@
+﻿body {
+    font-family: 'Muli',sans-serif;
+    background: #f5f7fa;
+}
+
+.sidebar {
+    min-height: calc(100vh - 60px);
+    background: #222831;
+}
+
+    .sidebar .list-group-item {
+        background: #222831;
+        color: white;
+        border: none;
+        padding: 18px;
+    }
+
+        .sidebar .list-group-item:hover {
+            background: #ff5722;
+            color: white;
+        }
+
+.card {
+    border: none;
+    border-radius: 12px;
+}
+
+.card-header {
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+#calendar {
+    width: 100%;
+}
+
+
+.membresias-container {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.membresias-header {
+    background: linear-gradient(135deg, #111827, #1f2937);
+    border-radius: 16px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .08);
+}
+
+    .membresias-header h2 {
+        color: #ffffff;
+        font-weight: 700;
+        margin: 0;
+        font-size: 27px;
+    }
+
+    .membresias-header p {
+        color: #9ca3af;
+        margin: 5px 0 0;
+        font-size: 14px;
+    }
+
+.btn-asignar {
+    border-radius: 9px;
+    padding: 10px 18px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(13, 110, 253, .2);
+}
+
+.custom-alert {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .05);
+}
+
+.membresias-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .07);
+}
+
+.tabla-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .tabla-header h5 {
+        margin: 0;
+        font-weight: 700;
+        color: #111827;
+    }
+
+.cantidad-membresias {
+    background: #f3f4f6;
+    color: #6b7280;
+    padding: 5px 11px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.membresias-table {
+    margin-bottom: 0;
+}
+
+    .membresias-table thead {
+        background: #f8fafc;
+    }
+
+        .membresias-table thead th {
+            border: none;
+            padding: 15px 20px;
+            color: #6b7280;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: .4px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+    .membresias-table tbody td {
+        padding: 17px 20px;
+        vertical-align: middle;
+        border-color: #edf0f2;
+        color: #374151;
+    }
+
+    .membresias-table tbody tr {
+        transition: all .2s ease;
+    }
+
+        .membresias-table tbody tr:hover {
+            background: #f8fafc;
+        }
+
+.cliente-nombre {
+    font-weight: 600;
+    color: #111827;
+}
+
+.cliente-icon {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 9px;
+    margin-right: 10px;
+}
+
+.plan-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 7px 11px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.fecha {
+    color: #4b5563;
+    font-size: 14px;
+}
+
+    .fecha i {
+        color: #9ca3af;
+        margin-right: 6px;
+    }
+
+.estado {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+    .estado i {
+        font-size: 7px;
+    }
+
+.estado-inactiva {
+    background: #e5e7eb;
+    color: #4b5563;
+}
+
+.estado-vencido {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.estado-pronto {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.estado-activo {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.acciones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 7px;
+}
+
+.btn-accion {
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 10px;
+    transition: all .2s ease;
+}
+
+    .btn-accion:hover {
+        transform: translateY(-2px);
+    }
+
+.empty-state {
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.empty-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: #f3f4f6;
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.empty-state h5 {
+    color: #374151;
+    font-weight: 700;
+}
+
+.empty-state p {
+    color: #9ca3af;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    .membresias-header {
+        padding: 20px;
+    }
+
+        .membresias-header h2 {
+            font-size: 22px;
+        }
+
+    .btn-asignar {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .tabla-header {
+        padding: 16px;
+    }
+
+    .membresias-table thead th,
+    .membresias-table tbody td {
+        padding: 12px;
+    }
+
+    .acciones {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+/*Pagos*/
+
+
+.pagos-container {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.pagos-header {
+    background: linear-gradient(135deg, #111827, #1f2937);
+    border-radius: 16px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .08);
+}
+
+    .pagos-header h2 {
+        color: #ffffff;
+        font-weight: 700;
+        margin: 0;
+        font-size: 27px;
+    }
+
+    .pagos-header p {
+        color: #9ca3af;
+        margin: 6px 0 0;
+        font-size: 14px;
+    }
+
+.btn-registrar {
+    border-radius: 9px;
+    padding: 10px 18px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(13, 110, 253, .2);
+}
+
+.pagos-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .07);
+}
+
+.tabla-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .tabla-header h5 {
+        margin: 0;
+        font-weight: 700;
+        color: #111827;
+    }
+
+.cantidad-pagos {
+    background: #f3f4f6;
+    color: #6b7280;
+    padding: 5px 11px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.pagos-table {
+    margin-bottom: 0;
+}
+
+    .pagos-table thead {
+        background: #f8fafc;
+    }
+
+        .pagos-table thead th {
+            border: none;
+            padding: 15px 20px;
+            color: #6b7280;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: .4px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+    .pagos-table tbody td {
+        padding: 17px 20px;
+        vertical-align: middle;
+        border-color: #edf0f2;
+        color: #374151;
+    }
+
+    .pagos-table tbody tr {
+        transition: all .2s ease;
+    }
+
+        .pagos-table tbody tr:hover {
+            background: #f8fafc;
+        }
+
+.cliente-nombre {
+    font-weight: 700;
+    color: #111827;
+}
+
+.cliente-icon {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 9px;
+    margin-right: 9px;
+}
+
+.plan-pago {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 7px 11px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.pago-general {
+    color: #9ca3af;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.monto {
+    color: #15803d;
+    font-weight: 700;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.fecha-pago {
+    color: #4b5563;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+    .fecha-pago i {
+        color: #9ca3af;
+        margin-right: 6px;
+    }
+
+.metodo-pago {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: #f3f4f6;
+    color: #4b5563;
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.estado {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+    .estado i {
+        font-size: 7px;
+    }
+
+.estado-pagado {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.estado-reversado {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.estado-otro {
+    background: #cffafe;
+    color: #0e7490;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.empty-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: #f3f4f6;
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.empty-state h5 {
+    color: #374151;
+    font-weight: 700;
+}
+
+.empty-state p {
+    color: #9ca3af;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    .pagos-header {
+        padding: 20px;
+    }
+
+        .pagos-header h2 {
+            font-size: 22px;
+        }
+
+    .btn-registrar {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .tabla-header {
+        padding: 16px;
+    }
+
+    .pagos-table thead th,
+    .pagos-table tbody td {
+        padding: 12px;
+    }
+}
+
+/*Oportunidades*/
+
+.oportunidades-container {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.oportunidades-header {
+    background: linear-gradient(135deg, #111827, #1f2937);
+    border-radius: 16px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .08);
+}
+
+    .oportunidades-header h2 {
+        color: #ffffff;
+        font-weight: 700;
+        margin: 0;
+        font-size: 27px;
+    }
+
+    .oportunidades-header p {
+        color: #9ca3af;
+        margin: 6px 0 0;
+        font-size: 14px;
+    }
+
+.btn-nueva {
+    border-radius: 9px;
+    padding: 10px 18px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(13, 110, 253, .2);
+}
+
+.custom-alert {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .05);
+}
+
+
+.filtros-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 22px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .06);
+}
+
+.filtros-title {
+    color: #111827;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.filtro-label {
+    color: #374151;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.filtro-control {
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+    padding: 9px 12px;
+    color: #374151;
+    background: #ffffff;
+}
+
+    .filtro-control:focus {
+        border-color: #2563eb;
+        box-shadow: 0 0 0 .2rem rgba(37, 99, 235, .10);
+    }
+
+.btn-filtrar {
+    border-radius: 9px;
+    height: 42px;
+    font-weight: 600;
+}
+
+.btn-limpiar {
+    border-radius: 9px;
+    height: 42px;
+}
+
+.oportunidades-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .07);
+}
+
+.tabla-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .tabla-header h5 {
+        margin: 0;
+        font-weight: 700;
+        color: #111827;
+    }
+
+.cantidad-oportunidades {
+    background: #f3f4f6;
+    color: #6b7280;
+    padding: 5px 11px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.oportunidades-table {
+    margin-bottom: 0;
+}
+
+    .oportunidades-table thead {
+        background: #f8fafc;
+    }
+
+        .oportunidades-table thead th {
+            border: none;
+            padding: 15px 20px;
+            color: #6b7280;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: .4px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+    .oportunidades-table tbody td {
+        padding: 17px 20px;
+        vertical-align: middle;
+        border-color: #edf0f2;
+        color: #374151;
+    }
+
+    .oportunidades-table tbody tr {
+        transition: all .2s ease;
+    }
+
+        .oportunidades-table tbody tr:hover {
+            background: #f8fafc;
+        }
+
+.cliente-link {
+    color: #2563eb;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+    .cliente-link:hover {
+        color: #1d4ed8;
+        text-decoration: underline;
+    }
+
+.cliente-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: #eff6ff;
+    color: #2563eb;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.oportunidad-titulo {
+    color: #111827;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.oportunidad-descripcion {
+    color: #9ca3af;
+    font-size: 12px;
+    display: block;
+    margin-top: 3px;
+    max-width: 280px;
+}
+
+.monto {
+    color: #15803d;
+    font-weight: 700;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.etapa-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.etapa-nuevo {
+    background: #cffafe;
+    color: #0e7490;
+}
+
+.etapa-contacto {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.etapa-propuesta {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.etapa-ganada {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.etapa-perdida {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.etapa-default {
+    background: #e5e7eb;
+    color: #4b5563;
+}
+
+.estado-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+    .estado-badge i {
+        font-size: 7px;
+    }
+
+.estado-activa {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.estado-inactiva {
+    background: #e5e7eb;
+    color: #4b5563;
+}
+
+.fecha-cierre {
+    color: #4b5563;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+    .fecha-cierre i {
+        color: #9ca3af;
+        margin-right: 5px;
+    }
+
+/* ACCIONES */
+.acciones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.btn-accion {
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 10px;
+    transition: all .2s ease;
+}
+
+    .btn-accion:hover {
+        transform: translateY(-2px);
+    }
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.empty-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: #f3f4f6;
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.empty-state h5 {
+    color: #374151;
+    font-weight: 700;
+}
+
+.empty-state p {
+    color: #9ca3af;
+    margin: 0;
+}
+
+@@media (max-width: 768px) {
+
+    .oportunidades-header {
+        padding: 20px;
+    }
+
+        .oportunidades-header h2 {
+            font-size: 22px;
+        }
+
+    .btn-nueva {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .filtros-card {
+        padding: 16px;
+    }
+
+    .tabla-header {
+        padding: 16px;
+    }
+
+    .oportunidades-table thead th,
+    .oportunidades-table tbody td {
+        padding: 12px;
+    }
+
+    .acciones {
+        justify-content: flex-start;
+    }
+}
+
+/*Planes*/
+
+
+.planes-container {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.planes-header {
+    background: linear-gradient(135deg, #111827, #1f2937);
+    border-radius: 16px;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .08);
+}
+
+    .planes-header h2 {
+        color: #ffffff;
+        font-weight: 700;
+        margin: 0;
+        font-size: 27px;
+    }
+
+    .planes-header p {
+        color: #9ca3af;
+        margin: 5px 0 0;
+        font-size: 14px;
+    }
+
+.btn-nuevo-plan {
+    border-radius: 9px;
+    padding: 10px 18px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(13, 110, 253, .2);
+}
+
+.planes-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .07);
+}
+
+.tabla-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .tabla-header h5 {
+        margin: 0;
+        font-weight: 700;
+        color: #111827;
+    }
+
+.cantidad-planes {
+    background: #f3f4f6;
+    color: #6b7280;
+    padding: 5px 11px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.planes-table {
+    margin-bottom: 0;
+}
+
+    .planes-table thead {
+        background: #f8fafc;
+    }
+
+        .planes-table thead th {
+            border: none;
+            padding: 15px 20px;
+            color: #6b7280;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: .4px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+    .planes-table tbody td {
+        padding: 17px 20px;
+        vertical-align: middle;
+        border-color: #edf0f2;
+        color: #374151;
+    }
+
+    .planes-table tbody tr {
+        transition: all .2s ease;
+    }
+
+        .planes-table tbody tr:hover {
+            background: #f8fafc;
+        }
+
+.plan-nombre {
+    font-weight: 700;
+    color: #111827;
+}
+
+.plan-icon {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 9px;
+    margin-right: 10px;
+}
+
+.plan-descripcion {
+    color: #6b7280;
+    font-size: 14px;
+    max-width: 350px;
+}
+
+.duracion {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: #f3f4f6;
+    color: #4b5563;
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.precio {
+    color: #15803d;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+.estado {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+    .estado i {
+        font-size: 7px;
+    }
+
+.estado-activo {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.estado-inactivo {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.acciones {
+    display: flex;
+    justify-content: flex-end;
+    gap: 7px;
+}
+
+.btn-accion {
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 10px;
+    transition: all .2s ease;
+}
+
+    .btn-accion:hover {
+        transform: translateY(-2px);
+    }
+
+.empty-state {
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.empty-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: #f3f4f6;
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.empty-state h5 {
+    color: #374151;
+    font-weight: 700;
+}
+
+.empty-state p {
+    color: #9ca3af;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    .planes-header {
+        padding: 20px;
+    }
+
+        .planes-header h2 {
+            font-size: 22px;
+        }
+
+    .btn-nuevo-plan {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .tabla-header {
+        padding: 16px;
+    }
+
+    .planes-table thead th,
+    .planes-table tbody td {
+        padding: 12px;
+    }
+
+    .acciones {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,123 @@
+@model GymManagement_WEB.Models.ClienteModel
+@{
+    Layout = ViewData["Layout"] as string;
+    ViewData["Title"] = "Detalle del Cliente";
+}
+
+<div class="container py-5 my-5">
+    <!-- Encabezado -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="fw-bold text-white">@Model.Nombre @Model.Apellido</h2>
+            <p class="text-muted">Detalles completos del cliente y su historial comercial</p>
+        </div>
+        <div class="d-flex gap-2">
+            <a asp-action="Edit" asp-route-id="@Model.IdCliente" class="btn btn-warning">
+                <i class="fa fa-pencil me-2"></i> Editar
+            </a>
+            <a asp-action="Index" class="btn btn-outline-light">
+                <i class="fa fa-arrow-left me-2"></i> Regresar
+            </a>
+        </div>
+    </div>
+
+    <!-- Ficha de Información General -->
+    <div class="card shadow-sm border-0 bg-dark text-white mb-4">
+        <div class="card-body p-4">
+            <h4 class="fw-bold mb-3 text-warning border-bottom border-secondary pb-2">Información General</h4>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <span class="text-muted d-block">Cédula</span>
+                    <strong class="fs-5 text-white">@Model.Cedula</strong>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <span class="text-muted d-block">Teléfono</span>
+                    <strong class="fs-5 text-white">@(string.IsNullOrEmpty(Model.Telefono) ? "N/A" : Model.Telefono)</strong>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <span class="text-muted d-block">Correo Electrónico</span>
+                    <strong class="fs-5 text-white">@(string.IsNullOrEmpty(Model.Correo) ? "N/A" : Model.Correo)</strong>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-4 mb-3">
+                    <span class="text-muted d-block">Estado</span>
+                    @if (Model.Estado)
+                    {
+                        <span class="badge bg-success fs-6 mt-1">Activo</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger fs-6 mt-1">Inactivo</span>
+                    }
+                </div>
+                <div class="col-md-4 mb-3">
+                    <span class="text-muted d-block">Fecha de Registro</span>
+                    <strong class="fs-5 text-white">@Model.FechaRegistro.ToString("dd/MM/yyyy HH:mm")</strong>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <span class="text-muted d-block">Dirección</span>
+                    <strong class="fs-6 text-white">@(string.IsNullOrEmpty(Model.Direccion) ? "N/A" : Model.Direccion)</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Integración de Oportunidades -->
+    <div class="card shadow-sm border-0 bg-dark text-white">
+        <div class="card-body p-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="fw-bold mb-0 text-warning">Oportunidades Comerciales</h4>
+                <a asp-controller="Oportunidades" asp-action="Create" asp-route-idCliente="@Model.IdCliente" class="btn btn-sm btn-primary">
+                    <i class="fa fa-plus me-2"></i> Nueva Oportunidad
+                </a>
+            </div>
+
+            @if (ViewBag.Oportunidades != null && ViewBag.Oportunidades.Count > 0)
+            {
+                <div class="table-responsive">
+                    <table class="table table-hover table-dark align-middle mb-0">
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Descripción</th>
+                                <th>Monto</th>
+                                <th>Etapa</th>
+                                <th>Fecha Cierre</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var op in ViewBag.Oportunidades)
+                            {
+                                <tr>
+                                    <td class="fw-bold">@op.Titulo</td>
+                                    <td>@op.Descripcion</td>
+                                    <td class="text-success fw-bold">₡@op.MontoEstimado.ToString("N2")</td>
+                                    <td><span class="badge bg-secondary font-monospace">@op.Etapa</span></td>
+                                    <td>@(op.FechaCierre != null ? op.FechaCierre.ToString("dd/MM/yyyy") : "Sin fecha")</td>
+                                    <td>
+                                        @if (op.Estado)
+                                        {
+                                            <span class="badge bg-success">Activa</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-danger">Inactiva</span>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-secondary text-center mb-0 mt-2">
+                    <i class="fa fa-info-circle me-2"></i> Este cliente no tiene oportunidades comerciales registradas.
+                </div>
+            }
+        </div>
+    </div>
+</div>

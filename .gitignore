@@ -1,0 +1,21 @@
+## Ignore Visual Studio temporary files, build results, and user settings
+.vs/
+[Db]in/
+[Ob]j/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.pidb
+*.ipch
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS files
+.DS_Store
+Thumbs.db

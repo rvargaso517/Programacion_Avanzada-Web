@@ -1,0 +1,95 @@
+@model Tarea1.Models.Dtos.OportunidadDto
+@using Microsoft.AspNetCore.Http
+@{
+    Layout = ViewData["Layout"] as string;
+    ViewData["Title"] = "Detalle de Oportunidad";
+}
+
+<div class="container py-5 my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-7">
+            <div class="card shadow border-0 bg-dark text-white p-4">
+                <div class="d-flex justify-content-between align-items-center mb-3 border-bottom border-secondary pb-2">
+                    <h3 class="fw-bold mb-0 text-white">Detalle de Oportunidad Comercial</h3>
+                    @if (Model.Estado)
+                    {
+                        <span class="badge bg-success">Activa</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">Inactiva</span>
+                    }
+                </div>
+
+                <div class="mb-3">
+                    <label class="text-muted d-block small">Cliente Asociado</label>
+                    <a asp-controller="Clientes" asp-action="Details" asp-route-id="@Model.IdCliente" class="fs-5 fw-bold text-info text-decoration-none">
+                        @Model.ClienteNombreCompleto
+                    </a>
+                </div>
+
+                <div class="mb-3">
+                    <label class="text-muted d-block small">Título</label>
+                    <span class="fs-5 fw-bold text-white">@Model.Titulo</span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="text-muted d-block small">Descripción / Detalles</label>
+                    <p class="fs-6 bg-secondary text-white p-3 rounded" style="white-space: pre-line;">
+                        @(string.IsNullOrEmpty(Model.Descripcion) ? "Sin descripción" : Model.Descripcion)
+                    </p>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <label class="text-muted d-block small">Monto Estimado</label>
+                        <span class="fs-5 fw-bold text-success">@Model.MontoEstimado.ToString("C2")</span>
+                    </div>
+                    <div class="col-6">
+                        <label class="text-muted d-block small">Etapa</label>
+                        @switch (Model.Etapa)
+                        {
+                            case "Nuevo":
+                                <span class="badge bg-info fs-6">Nuevo</span>
+                                break;
+                            case "En Contacto":
+                                <span class="badge bg-warning text-dark fs-6">En Contacto</span>
+                                break;
+                            case "Propuesta":
+                                <span class="badge bg-primary fs-6">Propuesta</span>
+                                break;
+                            case "Ganada":
+                                <span class="badge bg-success fs-6">Ganada</span>
+                                break;
+                            case "Perdida":
+                                <span class="badge bg-danger fs-6">Perdida</span>
+                                break;
+                            default:
+                                <span class="badge bg-secondary fs-6">@Model.Etapa</span>
+                                break;
+                        }
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-6">
+                        <label class="text-muted d-block small">Fecha de Cierre Estimada</label>
+                        <span class="fs-6">@(Model.FechaCierre?.ToString("dd/MM/yyyy") ?? "No definida")</span>
+                    </div>
+                    <div class="col-6">
+                        <label class="text-muted d-block small">Fecha de Registro</label>
+                        <span class="fs-6">@Model.FechaRegistro.ToString("dd/MM/yyyy hh:mm tt")</span>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-2">
+                    <a asp-action="Index" class="btn btn-outline-light w-100">Volver al listado</a>
+                    @if (Context.Session.GetInt32("Rol") == 1 || Context.Session.GetInt32("Rol") == 2)
+                    {
+                        <a asp-action="Edit" asp-route-id="@Model.IdOportunidad" class="btn btn-primary w-100">Editar</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

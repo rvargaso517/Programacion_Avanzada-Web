@@ -1,0 +1,50 @@
+@model GymManagement_WEB.Models.ClienteModel
+@{
+    Layout = ViewData["Layout"] as string;
+    ViewData["Title"] = "Eliminar Cliente";
+}
+
+<div class="container py-5 my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+            <div class="card shadow border-0 bg-dark text-white p-4">
+                <h3 class="fw-bold mb-3 text-white border-bottom border-secondary pb-2">Desactivar Cliente</h3>
+
+                <div class="alert alert-warning mb-4">
+                    <i class="fa fa-exclamation-triangle me-2"></i>
+                    <strong>¿Está seguro de que desea desactivar este cliente?</strong>
+                    <p class="mb-0 mt-2 text-dark"><small>El cliente no será eliminado físicamente de la base de datos, sino que se marcará como Inactivo.</small></p>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6 mb-3">
+                        <span class="text-muted">Nombre</span>
+                        <p class="fs-5 fw-semibold mb-0 text-white">@Model.Nombre @Model.Apellido</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <span class="text-muted">Cédula</span>
+                        <p class="fs-5 fw-semibold mb-0 text-white">@Model.Cedula</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <span class="text-muted">Teléfono</span>
+                        <p class="fs-5 fw-semibold mb-0 text-white">@(string.IsNullOrEmpty(Model.Telefono) ? "N/A" : Model.Telefono)</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <span class="text-muted">Correo</span>
+                        <p class="fs-5 fw-semibold mb-0 text-white">@(string.IsNullOrEmpty(Model.Correo) ? "N/A" : Model.Correo)</p>
+                    </div>
+                </div>
+
+                <form asp-action="Delete" method="post">
+                    @Html.AntiForgeryToken()
+                    <input asp-for="IdCliente" type="hidden" />
+
+                    <div class="d-flex justify-content-end gap-2">
+                        <a asp-action="Index" class="btn btn-outline-light">Cancelar</a>
+                        <button type="submit" class="btn btn-danger px-4">Confirmar Desactivación</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
