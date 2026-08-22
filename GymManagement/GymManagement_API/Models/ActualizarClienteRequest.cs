@@ -9,10 +9,12 @@ namespace GymManagement_API.Models
 
         [Required(ErrorMessage = "El nombre es obligatorio.")]
         [StringLength(100, ErrorMessage = "El nombre no puede superar los 100 caracteres.")]
+        [RegularExpression(@"^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$", ErrorMessage = "El nombre solo puede contener letras y espacios.")]
         public string Nombre { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "El apellido es obligatorio.")]
         [StringLength(100, ErrorMessage = "El apellido no puede superar los 100 caracteres.")]
+        [RegularExpression(@"^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\s]+$", ErrorMessage = "El apellido solo puede contener letras y espacios.")]
         public string Apellido { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "La cédula es obligatoria.")]
@@ -20,10 +22,12 @@ namespace GymManagement_API.Models
         public string Cedula { get; set; } = string.Empty;
 
         [StringLength(20, ErrorMessage = "El teléfono no puede superar los 20 caracteres.")]
+        [RegularExpression(@"^\+?[0-9\s-]{8,15}$", ErrorMessage = "El número de teléfono no es válido.")]
         public string? Telefono { get; set; }
 
         [EmailAddress(ErrorMessage = "El correo electrónico no es válido.")]
         [StringLength(150, ErrorMessage = "El correo no puede superar los 150 caracteres.")]
+        [RegularExpression(@"^[a-zA-Z0-9._%+-]+@(gmail|hotmail)\.[a-zA-Z0-9.-]+$", ErrorMessage = "El correo debe ser un dominio de @gmail o @hotmail.")]
         public string? Correo { get; set; }
 
         [StringLength(250, ErrorMessage = "La dirección no puede superar los 250 caracteres.")]

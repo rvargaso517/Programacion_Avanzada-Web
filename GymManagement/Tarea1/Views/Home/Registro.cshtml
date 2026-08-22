@@ -1,4 +1,4 @@
-﻿@using GymManagement_WEB.Models
+@using GymManagement_WEB.Models
 @model RegistroUsuarioModel
 
 
@@ -117,9 +117,15 @@
                         Contraseña
                     </label>
 
-                    <input asp-for="Contrasenna"
-                           type="password"
-                           class="form-control" />
+                    <div class="input-group">
+                        <input asp-for="Contrasenna"
+                               type="password"
+                               id="txtContrasenna"
+                               class="form-control" />
+                        <button class="btn btn-outline-secondary" type="button" onclick="togglePasswordVisibility('txtContrasenna', this)">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                    </div>
 
                     <span asp-validation-for="Contrasenna"
                           class="text-danger"></span>
@@ -133,9 +139,15 @@
                        Confirmar Contraseña
                     </label>
 
-                    <input asp-for="ConfirmarContrasenna"
-                           type="password"
-                           class="form-control" />
+                    <div class="input-group">
+                        <input asp-for="ConfirmarContrasenna"
+                               type="password"
+                               id="txtConfirmarContrasenna"
+                               class="form-control" />
+                        <button class="btn btn-outline-secondary" type="button" onclick="togglePasswordVisibility('txtConfirmarContrasenna', this)">
+                            <i class="fa fa-eye"></i>
+                        </button>
+                    </div>
 
                     <span asp-validation-for="ConfirmarContrasenna"
                           class="text-danger"></span>

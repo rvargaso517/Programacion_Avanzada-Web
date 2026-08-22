@@ -88,39 +88,60 @@ namespace Tarea1.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(UsuarioModel model)
         {
-            using var client = _http.CreateClient();
-            var urlApi = _config["Valores:UrlApi"] + "Home/IniciarSesionAPI";
-            var response = await client.PostAsJsonAsync(urlApi, model);
-
-            if (response.StatusCode == HttpStatusCode.OK)
+            if (!ModelState.IsValid)
             {
-                var datos = await response.Content.ReadFromJsonAsync<UsuarioModel>();
-
-                HttpContext.Session.SetString("Autenticado", "1");
-                HttpContext.Session.SetInt32("IdUsuario", datos!.IdUsuario);
-                HttpContext.Session.SetString("Nombre", datos.Nombre);
-                HttpContext.Session.SetString("Correo", datos.Correo);
-                HttpContext.Session.SetInt32("Rol", datos.IdRol);
-
-                await EmitirTokenAsync(datos.IdUsuario);
-
-                var rol = datos.IdRol;
-                if (rol == 1 || rol == 2 || rol == 3)
-                {
-                    return RedirectToAction("Index", "Dashboard");
-                }
-                else
-                {
-                    return RedirectToAction("Index", "Home");
-                }
-            }
-            else if (response.StatusCode == HttpStatusCode.Unauthorized)
-            {
-                ViewBag.Mensaje = "Correo o contraseña incorrectos.";
                 return View(model);
             }
 
-            throw new Exception("Ocurrió un error al intentar iniciar sesión.");
+            try
+            {
+                using var client = _http.CreateClient();
+                var urlApi = _config["Valores:UrlApi"] + "Home/IniciarSesionAPI";
+                var response = await client.PostAsJsonAsync(urlApi, model);
+
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    var datos = await response.Content.ReadFromJsonAsync<UsuarioModel>();
+
+                    HttpContext.Session.SetString("Autenticado", "1");
+                    HttpContext.Session.SetInt32("IdUsuario", datos!.IdUsuario);
+                    HttpContext.Session.SetString("Nombre", datos.Nombre);
+                    HttpContext.Session.SetString("Correo", datos.Correo);
+                    HttpContext.Session.SetInt32("Rol", datos.IdRol);
+
+                    await EmitirTokenAsync(datos.IdUsuario);
+
+                    var rol = datos.IdRol;
+                    if (rol == 1 || rol == 2 || rol == 3)
+                    {
+                        return RedirectToAction("Index", "Dashboard");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
+                }
+                else if (response.StatusCode == HttpStatusCode.Unauthorized)
+                {
+                    ViewBag.Mensaje = "Correo o contraseña incorrectos.";
+                    return View(model);
+                }
+                else if (response.StatusCode == HttpStatusCode.BadRequest)
+                {
+                    ViewBag.Mensaje = "Los datos ingresados no cumplen con el formato requerido.";
+                    return View(model);
+                }
+                else
+                {
+                    ViewBag.Mensaje = "Ocurrió un error al intentar iniciar sesión en el servidor.";
+                    return View(model);
+                }
+            }
+            catch (Exception)
+            {
+                ViewBag.Mensaje = "No se pudo establecer conexión con el servicio de autenticación. Asegúrese de que el backend API esté ejecutándose.";
+                return View(model);
+            }
         }
 
         [HttpGet]
@@ -178,8 +199,16 @@ namespace Tarea1.Controllers
             var request = new ResetPasswordRequest
             {
                 Token = token,
-                NuevaPassword = nuevaContrasenna
+                NuevaPassword = nuevaContrasenna,
+                ConfirmarPassword = confirmarContrasenna
             };
+
+            if (!TryValidateModel(request))
+            {
+                var error = ModelState.Values.SelectMany(v => v.Errors).FirstOrDefault()?.ErrorMessage;
+                ViewBag.Mensaje = error ?? "La contraseña no cumple con los requisitos mínimos de seguridad.";
+                return View();
+            }
 
             var result = await _authService.RestablecerPasswordAsync(request);
             if (result.Success)

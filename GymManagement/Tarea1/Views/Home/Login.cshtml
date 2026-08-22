@@ -1,4 +1,4 @@
-﻿@using GymManagement_WEB.Models
+@using GymManagement_WEB.Models
 @model UsuarioModel
 
 @{
@@ -55,6 +55,7 @@
                 <input asp-for="Correo"
                        class="form-control form-control-lg"
                        placeholder="Ingrese su correo" />
+                <span asp-validation-for="Correo" class="text-danger"></span>
 
             </div>
 
@@ -64,10 +65,17 @@
                     Contraseña
                 </label>
 
-                <input asp-for="Contrasenna"
-                       type="password"
-                       class="form-control form-control-lg"
-                       placeholder="Ingrese su contraseña" />
+                <div class="input-group">
+                    <input asp-for="Contrasenna"
+                           type="password"
+                           id="txtContrasenna"
+                           class="form-control form-control-lg"
+                           placeholder="Ingrese su contraseña" />
+                    <button class="btn btn-outline-secondary" type="button" onclick="togglePasswordVisibility('txtContrasenna', this)">
+                        <i class="fa fa-eye"></i>
+                    </button>
+                </div>
+                <span asp-validation-for="Contrasenna" class="text-danger"></span>
 
             </div>
 
@@ -109,3 +117,8 @@
     </div>
 
 </div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -9,8 +9,9 @@ namespace Tarea1.Models.Dtos
         public string Token { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "La nueva contraseña es obligatoria.")]
-        [StringLength(100, MinimumLength = 6, ErrorMessage = "La contraseña debe tener al menos 6 caracteres.")]
+        [StringLength(100, MinimumLength = 8, ErrorMessage = "La contraseña debe tener al menos 8 caracteres.")]
         [DataType(DataType.Password)]
+        [RegularExpression(@"^(?=.*\d)(?=.*[\W_]).{8,}$", ErrorMessage = "La contraseña debe tener al menos 8 caracteres, un número y un carácter especial.")]
         [Display(Name = "Nueva contraseña")]
         public string NuevaPassword { get; set; } = string.Empty;
 
