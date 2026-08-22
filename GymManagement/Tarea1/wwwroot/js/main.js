@@ -19,6 +19,12 @@
         $("#preloder").delay(200).fadeOut("slow");
     });
 
+    // Safety fallback for preloader
+    setTimeout(function () {
+        $(".loader").fadeOut();
+        $("#preloder").fadeOut("slow");
+    }, 1500);
+
     /*------------------
         Background Set
     --------------------*/

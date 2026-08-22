@@ -873,12 +873,30 @@ GO
 SET QUOTED_IDENTIFIER OFF
 GO
 
-/* Eliminar cliente */
 CREATE OR ALTER PROCEDURE [dbo].[sp_Cliente_Eliminar]
 	@IdCliente INT
 AS
 BEGIN
 	SET NOCOUNT ON;
+	
+	-- Eliminar dependencias
+	DELETE FROM dbo.Asistencia WHERE IdCliente = @IdCliente;
+	DELETE FROM dbo.Citas WHERE IdCliente = @IdCliente;
+	DELETE FROM dbo.MembresiaCliente WHERE IdCliente = @IdCliente;
+	DELETE FROM dbo.Oportunidades WHERE IdCliente = @IdCliente;
+	
+	-- Eliminar rutinas asociadas y sus detalles
+	DELETE FROM dbo.DetalleRutina WHERE IdRutina IN (SELECT IdRutina FROM dbo.Rutinas WHERE IdCliente = @IdCliente);
+	DELETE FROM dbo.Rutinas WHERE IdCliente = @IdCliente;
+	
+	-- Eliminar de Usuarios si existe
+	DECLARE @Correo VARCHAR(150);
+	SELECT @Correo = Correo FROM dbo.Clientes WHERE IdCliente = @IdCliente;
+	IF @Correo IS NOT NULL
+	BEGIN
+		DELETE FROM dbo.Usuarios WHERE Correo = @Correo;
+	END
+
 	DELETE FROM dbo.Clientes
 	WHERE IdCliente = @IdCliente;
 
@@ -958,12 +976,13 @@ CREATE OR ALTER PROCEDURE [dbo].[sp_DetalleRutina_Crear]
 	@Ejercicio VARCHAR(100),
 	@Series INT,
 	@Repeticiones VARCHAR(50),
-	@Descanso VARCHAR(50) = NULL
+	@Descanso VARCHAR(50) = NULL,
+	@VideoUrl VARCHAR(500) = NULL
 AS
 BEGIN
 	SET NOCOUNT ON;
-	INSERT INTO dbo.DetalleRutina (IdRutina, DiaSemana, Ejercicio, Series, Repeticiones, Descanso)
-	VALUES (@IdRutina, @DiaSemana, @Ejercicio, @Series, @Repeticiones, @Descanso);
+	INSERT INTO dbo.DetalleRutina (IdRutina, DiaSemana, Ejercicio, Series, Repeticiones, Descanso, VideoUrl)
+	VALUES (@IdRutina, @DiaSemana, @Ejercicio, @Series, @Repeticiones, @Descanso, @VideoUrl);
 
 	SELECT CAST(SCOPE_IDENTITY() AS INT) AS IdDetalle;
 END
@@ -994,7 +1013,7 @@ CREATE OR ALTER PROCEDURE [dbo].[sp_DetalleRutina_ListarPorRutina]
 AS
 BEGIN
 	SET NOCOUNT ON;
-	SELECT IdDetalle, IdRutina, DiaSemana, Ejercicio, Series, Repeticiones, Descanso
+	SELECT IdDetalle, IdRutina, DiaSemana, Ejercicio, Series, Repeticiones, Descanso, VideoUrl
 	FROM dbo.DetalleRutina
 	WHERE IdRutina = @IdRutina
 	ORDER BY 

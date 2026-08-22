@@ -63,7 +63,7 @@ namespace Tarea1.Controllers
                 reservas = await _reservaRepository.ListarTodasAsync();
             }
 
-            ViewData["Layout"] = (userRol == 1 || userRol == 2) ? "_LayoutAdmin" : "_Layout";
+            ViewData["Layout"] = (userRol == 1 || userRol == 2 || userRol == 3) ? "_LayoutAdmin" : "_Layout";
             return View(reservas);
         }
 

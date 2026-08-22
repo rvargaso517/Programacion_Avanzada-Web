@@ -1,0 +1,35 @@
+{
+  "1": [
+    "Dashboard",
+    "Clientes",
+    "Oportunidades",
+    "Planes",
+    "Membresias",
+    "Agenda",
+    "Rutinas",
+    "Reservas",
+    "Pagos",
+    "Usuarios",
+    "Contenido Web"
+  ],
+  "2": [
+    "Dashboard",
+    "Clientes",
+    "Oportunidades",
+    "Agenda",
+    "Reservas",
+    "Pagos"
+  ],
+  "3": [
+    "Dashboard",
+    "Agenda",
+    "Rutinas",
+    "Reservas"
+  ],
+  "4": [
+    "Planes",
+    "Agenda",
+    "Rutinas",
+    "Reservas"
+  ]
+}

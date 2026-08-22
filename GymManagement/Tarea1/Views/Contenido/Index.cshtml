@@ -1,0 +1,386 @@
+@model Tarea1.Models.ContenidoPaginaModel
+@{
+    Layout = ViewData["Layout"] as string;
+    ViewData["Title"] = "Gestión de Contenido Web";
+}
+
+<style>
+    .nav-tabs .nav-link {
+        background-color: #212529 !important;
+        color: #adb5bd !important;
+        border: none !important;
+        transition: all 0.2s ease;
+    }
+    .nav-tabs .nav-link:hover {
+        color: #fff !important;
+        background-color: #343a40 !important;
+    }
+    .nav-tabs .nav-link.active {
+        background-color: #f36100 !important;
+        color: #fff !important;
+        font-weight: bold;
+    }
+</style>
+
+<div class="container-fluid py-4">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2 class="fw-bold text-dark mb-0">
+                    <i class="fa fa-pencil-square-o text-primary me-2"></i>Gestión de Contenido Web
+                </h2>
+                <a href="/" target="_blank" class="btn btn-outline-primary">
+                    <i class="fa fa-eye me-2"></i>Ver Sitio Web
+                </a>
+            </div>
+
+            @if (TempData["Exito"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show shadow-sm" role="alert">
+                    <i class="fa fa-check-circle me-2"></i>@TempData["Exito"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            }
+
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-dark text-white p-0">
+                    <ul class="nav nav-tabs card-header-tabs m-0 border-0" id="contentTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active text-white px-4 py-3 border-0 rounded-0" id="choseus-tab" data-bs-toggle="tab" data-bs-target="#choseus-pane" type="button" role="tab" aria-controls="choseus-pane" aria-selected="true">
+                                <i class="fa fa-thumbs-up me-2"></i>¿Por qué elegirnos?
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-white px-4 py-3 border-0 rounded-0" id="classes-tab" data-bs-toggle="tab" data-bs-target="#classes-pane" type="button" role="tab" aria-controls="classes-pane" aria-selected="false">
+                                <i class="fa fa-picture-o me-2"></i>Nuestras Clases / Galería
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link text-white px-4 py-3 border-0 rounded-0" id="team-tab" data-bs-toggle="tab" data-bs-target="#team-pane" type="button" role="tab" aria-controls="team-pane" aria-selected="false">
+                                <i class="fa fa-users me-2"></i>Nuestro Equipo
+                            </button>
+                        </li>
+                        @if (Context.Session.GetInt32("Rol") == 1)
+                        {
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-white px-4 py-3 border-0 rounded-0" id="permisos-tab" data-bs-toggle="tab" data-bs-target="#permisos-pane" type="button" role="tab" aria-controls="permisos-pane" aria-selected="false">
+                                    <i class="fa fa-lock me-2"></i>Roles y Accesos
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link text-white px-4 py-3 border-0 rounded-0" id="errores-tab" data-bs-toggle="tab" data-bs-target="#errores-pane" type="button" role="tab" aria-controls="errores-pane" aria-selected="false">
+                                    <i class="fa fa-bug me-2"></i>Log de Errores
+                                </button>
+                            </li>
+                        }
+                    </ul>
+                </div>
+                <div class="card-body p-4 bg-white">
+                    <div class="tab-content" id="contentTabsContent">
+                        
+                        <!-- PANE: CHOSE US -->
+                        <div class="tab-pane fade show active" id="choseus-pane" role="tabpanel" aria-labelledby="choseus-tab" tabindex="0">
+                            <form asp-action="GuardarChoseUs" method="post">
+                                @Html.AntiForgeryToken()
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label fw-bold text-secondary">Título Principal</label>
+                                        <input type="text" name="Titulo" value="@Model.ChoseUs.Titulo" class="form-control form-control-lg border-2" placeholder="Ej: SUPERA TUS LÍMITES" required />
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label fw-bold text-secondary">Subtítulo</label>
+                                        <input type="text" name="Subtitulo" value="@Model.ChoseUs.Subtitulo" class="form-control form-control-lg border-2" placeholder="Ej: ¿POR QUÉ ELEGIRNOS?" required />
+                                    </div>
+                                </div>
+
+                                <h4 class="fw-bold text-dark border-bottom pb-2 mb-3">
+                                    <i class="fa fa-list-ol text-primary me-2"></i>Tarjetas de Características (4 Items)
+                                </h4>
+
+                                <div class="row">
+                                    @for (int i = 0; i < 4; i++)
+                                    {
+                                        var item = (Model.ChoseUs.Items != null && Model.ChoseUs.Items.Count > i) ? Model.ChoseUs.Items[i] : new Tarea1.Models.ChoseUsItem();
+                                        var iconName = i switch
+                                        {
+                                            0 => "Bicicleta Estática",
+                                            1 => "Nutrición/Batido",
+                                            2 => "Mancuerna/Fuerza",
+                                            3 => "Frecuencia Cardíaca",
+                                            _ => "Servicio"
+                                        };
+                                        <div class="col-md-6 mb-4">
+                                            <div class="card bg-light border-0 shadow-sm h-100">
+                                                <div class="card-body p-3">
+                                                    <h5 class="fw-bold text-primary mb-3">
+                                                        <span class="badge bg-primary text-white me-2">Item @(i + 1)</span> @iconName
+                                                    </h5>
+                                                    <div class="mb-2">
+                                                        <label class="form-label small fw-semibold text-muted">Título del Item</label>
+                                                        <input type="text" name="Items[@i].Titulo" value="@item.Titulo" class="form-control border-2" placeholder="Ej: Equipo moderno" required />
+                                                    </div>
+                                                    <div>
+                                                        <label class="form-label small fw-semibold text-muted">Descripción</label>
+                                                        <textarea name="Items[@i].Descripcion" class="form-control border-2" rows="2" placeholder="Detalle o información del servicio..." required>@item.Descripcion</textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+
+                                <div class="text-end border-top pt-3 mt-2">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                                        <i class="fa fa-save me-2"></i>Guardar Características
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- PANE: CLASSES / GALLERY -->
+                        <div class="tab-pane fade" id="classes-pane" role="tabpanel" aria-labelledby="classes-tab" tabindex="0">
+                            <form asp-action="GuardarClasses" method="post" enctype="multipart/form-data">
+                                @Html.AntiForgeryToken()
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label fw-bold text-secondary">Título Principal</label>
+                                        <input type="text" name="Titulo" value="@Model.Classes.Titulo" class="form-control form-control-lg border-2" placeholder="Ej: QUÉ PODEMOS OFRECER" required />
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label fw-bold text-secondary">Subtítulo</label>
+                                        <input type="text" name="Subtitulo" value="@Model.Classes.Subtitulo" class="form-control form-control-lg border-2" placeholder="Ej: Nuestras Clases" required />
+                                    </div>
+                                </div>
+
+                                <h4 class="fw-bold text-dark border-bottom pb-2 mb-3">
+                                    <i class="fa fa-th-large text-primary me-2"></i>Lista de Clases en Galería (5 Items)
+                                </h4>
+
+                                <div class="row">
+                                    @for (int i = 0; i < 5; i++)
+                                    {
+                                        var item = (Model.Classes.Items != null && Model.Classes.Items.Count > i) ? Model.Classes.Items[i] : new Tarea1.Models.ClassesItem();
+                                        <div class="col-md-6 col-lg-4 mb-4">
+                                            <div class="card bg-light border-0 shadow-sm h-100">
+                                                <div class="card-body p-3">
+                                                    <h5 class="fw-bold text-primary mb-3">
+                                                        <span class="badge bg-secondary text-white me-2">Clase @(i + 1)</span>
+                                                    </h5>
+                                                    <div class="mb-2">
+                                                        <label class="form-label small fw-semibold text-muted">Categoría / Etiqueta</label>
+                                                        <input type="text" name="Items[@i].Categoria" value="@item.Categoria" class="form-control border-2" placeholder="Ej: FUERZA, CARDIO..." required />
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="form-label small fw-semibold text-muted">Nombre de la Clase</label>
+                                                        <input type="text" name="Items[@i].Titulo" value="@item.Titulo" class="form-control border-2" placeholder="Ej: Levantamiento de pesas" required />
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="form-label small fw-semibold text-muted">Imagen Actual</label>
+                                                        <div class="d-flex align-items-center gap-2 mb-2">
+                                                            <img src="@(string.IsNullOrEmpty(item.Imagen) ? "/imagenes/logo.png" : item.Imagen)" class="img-thumbnail" style="height: 50px; width: 80px; object-fit: cover;" />
+                                                            <input type="text" name="Items[@i].Imagen" value="@item.Imagen" class="form-control border-2 bg-light small" style="font-size: 11px;" readonly />
+                                                        </div>
+                                                        <label class="form-label small fw-semibold text-muted">Subir Nueva Imagen</label>
+                                                        <input type="file" name="imagenFile_@i" class="form-control border-2" accept="image/*" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+
+                                <div class="text-end border-top pt-3 mt-2">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                                        <i class="fa fa-save me-2"></i>Guardar Clases
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- PANE: NUESTRO EQUIPO -->
+                        <div class="tab-pane fade" id="team-pane" role="tabpanel" aria-labelledby="team-tab" tabindex="0">
+                            <form asp-action="GuardarTeam" method="post" enctype="multipart/form-data">
+                                @Html.AntiForgeryToken()
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label fw-bold text-secondary">Título Principal</label>
+                                        <input type="text" name="Titulo" value="@Model.Team.Titulo" class="form-control form-control-lg border-2" placeholder="Ej: ENTRENA CON EXPERTOS" required />
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="form-label fw-bold text-secondary">Subtítulo</label>
+                                        <input type="text" name="Subtitulo" value="@Model.Team.Subtitulo" class="form-control form-control-lg border-2" placeholder="Ej: Nuestro Equipo" required />
+                                    </div>
+                                </div>
+
+                                <h4 class="fw-bold text-dark border-bottom pb-2 mb-3">
+                                    <i class="fa fa-users text-primary me-2"></i>Entrenadores y Especialidades (6 Items)
+                                </h4>
+
+                                <div class="row">
+                                    @for (int i = 0; i < 6; i++)
+                                    {
+                                        var item = (Model.Team.Items != null && Model.Team.Items.Count > i) ? Model.Team.Items[i] : new Tarea1.Models.TeamItem();
+                                        <div class="col-md-6 col-lg-4 mb-4">
+                                            <div class="card bg-light border-0 shadow-sm h-100">
+                                                <div class="card-body p-3">
+                                                    <h5 class="fw-bold text-primary mb-3">
+                                                        <span class="badge bg-secondary text-white me-2">Entrenador @(i + 1)</span>
+                                                    </h5>
+                                                    <div class="mb-2">
+                                                        <label class="form-label small fw-semibold text-muted">Nombre Completo</label>
+                                                        <input type="text" name="Items[@i].Nombre" value="@item.Nombre" class="form-control border-2" placeholder="Ej: Athart Rachel" required />
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="form-label small fw-semibold text-muted">Especialidad</label>
+                                                        <input type="text" name="Items[@i].Especialidad" value="@item.Especialidad" class="form-control border-2" placeholder="Ej: Entrenador de Gimnasio" required />
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="form-label small fw-semibold text-muted">Foto Actual</label>
+                                                        <div class="d-flex align-items-center gap-2 mb-2">
+                                                            <img src="@(string.IsNullOrEmpty(item.Imagen) ? "/imagenes/logo.png" : item.Imagen)" class="img-thumbnail" style="height: 60px; width: 60px; object-fit: cover;" />
+                                                            <input type="text" name="Items[@i].Imagen" value="@item.Imagen" class="form-control border-2 bg-light small" style="font-size: 11px;" readonly />
+                                                        </div>
+                                                        <label class="form-label small fw-semibold text-muted">Subir Nueva Foto</label>
+                                                        <input type="file" name="teamFile_@i" class="form-control border-2" accept="image/*" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+
+                                <div class="text-end border-top pt-3 mt-2">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                                        <i class="fa fa-save me-2"></i>Guardar Entrenadores
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- PANE: ROLES AND ACCESS -->
+                        @if (Context.Session.GetInt32("Rol") == 1)
+                        {
+                            var roles = ViewBag.Roles as IEnumerable<dynamic> ?? new List<dynamic>();
+                            var permisos = ViewBag.Permisos as Dictionary<string, List<string>> ?? new();
+                            var menus = ViewBag.Menus as List<string> ?? new();
+
+                            <div class="tab-pane fade" id="permisos-pane" role="tabpanel" aria-labelledby="permisos-tab" tabindex="0">
+                                <form asp-action="GuardarPermisos" method="post">
+                                    @Html.AntiForgeryToken()
+                                    
+                                    <div class="alert alert-info border-0 shadow-sm mb-4">
+                                        <i class="fa fa-info-circle me-2"></i><strong>Administrador:</strong> Desde esta cuadrícula puedes conceder o revocar el acceso a las diferentes opciones del menú para cada rol del sistema. Al desmarcar una opción, esa sección ya no aparecerá en su panel de navegación y se restringirá su acceso.
+                                    </div>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped align-middle bg-light rounded-3 overflow-hidden">
+                                            <thead class="table-dark">
+                                                <tr>
+                                                    <th class="py-3 px-3" style="width: 25%;">Rol</th>
+                                                    <th class="py-3 px-3">Permisos de Acceso al Menú</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach (var rol in roles)
+                                                {
+                                                    string rolIdStr = rol.IdRol.ToString();
+                                                    var itemsAcceso = permisos.ContainsKey(rolIdStr) ? permisos[rolIdStr] : new List<string>();
+
+                                                    <tr>
+                                                        <td class="fw-bold ps-3 py-3">
+                                                            <span class="d-block text-primary">@rol.Nombre</span>
+                                                            <small class="text-muted fw-normal">@rol.Descripcion</small>
+                                                        </td>
+                                                        <td class="py-3">
+                                                            <div class="row">
+                                                                @foreach (var menu in menus)
+                                                                {
+                                                                    bool hasAccess = itemsAcceso.Contains(menu);
+                                                                    <div class="col-sm-6 col-md-4 col-lg-3 mb-2">
+                                                                        <div class="form-check form-switch">
+                                                                            <input class="form-check-input" type="checkbox" 
+                                                                                   name="permisos[@rolIdStr]" value="@menu" id="chk_@(rolIdStr)_@menu" 
+                                                                                   @(hasAccess ? "checked" : "") />
+                                                                            <label class="form-check-label small fw-semibold text-dark" for="chk_@(rolIdStr)_@menu">@menu</label>
+                                                                        </div>
+                                                                    </div>
+                                                                }
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="text-end border-top pt-3 mt-4">
+                                        <button type="submit" class="btn btn-primary btn-lg px-5">
+                                            <i class="fa fa-save me-2"></i>Guardar Roles y Permisos
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        }
+
+                        <!-- PANE: LOG DE ERRORES -->
+                        @if (Context.Session.GetInt32("Rol") == 1)
+                        {
+                            var errores = ViewBag.Errores as IEnumerable<dynamic> ?? new List<dynamic>();
+
+                            <div class="tab-pane fade" id="errores-pane" role="tabpanel" aria-labelledby="errores-tab" tabindex="0">
+                                <div class="alert alert-warning border-0 shadow-sm mb-4">
+                                    <i class="fa fa-exclamation-triangle me-2"></i><strong>Historial de Errores:</strong> Este registro captura todas las excepciones no controladas capturadas por el middleware del sistema. El "Número de error" coincide con el código de error mostrado a los usuarios.
+                                </div>
+
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped align-middle bg-light rounded-3 overflow-hidden">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th class="py-3 px-3" style="width: 8%;">ID</th>
+                                                <th class="py-3 px-3" style="width: 15%;">Fecha</th>
+                                                <th class="py-3 px-3" style="width: 25%;">Mensaje</th>
+                                                <th class="py-3 px-3" style="width: 15%;">Ruta</th>
+                                                <th class="py-3 px-3" style="width: 12%;">Usuario</th>
+                                                <th class="py-3 px-3">StackTrace</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @if (!errores.Any())
+                                            {
+                                                <tr>
+                                                    <td colspan="6" class="text-center text-muted py-4">No se han registrado errores en la base de datos. ¡Todo funciona correctamente!</td>
+                                                </tr>
+                                            }
+                                            else
+                                            {
+                                                foreach (var err in errores)
+                                                {
+                                                    <tr>
+                                                        <td class="fw-bold text-center">@err.IdError</td>
+                                                        <td class="small">@err.Fecha.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                                                        <td class="text-danger fw-semibold small">@err.Mensaje</td>
+                                                        <td class="small"><code>@err.Ruta</code></td>
+                                                        <td class="small fw-semibold">@(err.UsuarioAfectado ?? "Anónimo")</td>
+                                                        <td>
+                                                            <button class="btn btn-sm btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#stack_@err.IdError" aria-expanded="false" aria-controls="stack_@err.IdError">
+                                                                <i class="fa fa-code me-1"></i>Ver Stack
+                                                            </button>
+                                                            <div class="collapse mt-2" id="stack_@err.IdError">
+                                                                <pre class="bg-dark text-white p-3 rounded small" style="max-height: 200px; overflow-y: auto; font-size: 11px; white-space: pre-wrap; word-break: break-all;">@err.StackTrace</pre>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

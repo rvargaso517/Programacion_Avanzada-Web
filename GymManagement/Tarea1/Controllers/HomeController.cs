@@ -59,6 +59,24 @@ namespace Tarea1.Controllers
                 planes = planes.Where(p => p.Estado).ToList(); // Solo planes activos
             }
 
+            // Cargar contenido editable del sitio
+            var contenido = new ContenidoPaginaModel();
+            try
+            {
+                var contentPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "data", "contenido.json");
+                if (System.IO.File.Exists(contentPath))
+                {
+                    var contentJson = await System.IO.File.ReadAllTextAsync(contentPath);
+                    var options = new System.Text.Json.JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+                    contenido = System.Text.Json.JsonSerializer.Deserialize<ContenidoPaginaModel>(contentJson, options) ?? new ContenidoPaginaModel();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error leyendo JSON de contenido: " + ex.Message);
+            }
+            ViewBag.Contenido = contenido;
+
             return View(planes);
         }
         [HttpGet]
@@ -89,7 +107,7 @@ namespace Tarea1.Controllers
                 var rol = datos.IdRol;
                 if (rol == 1 || rol == 2 || rol == 3)
                 {
-                    return RedirectToAction("Index", "Citas");
+                    return RedirectToAction("Index", "Dashboard");
                 }
                 else
                 {

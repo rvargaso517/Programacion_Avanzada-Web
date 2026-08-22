@@ -10,7 +10,12 @@ namespace Tarea1.Controllers
             if (string.IsNullOrEmpty(autenticado))
                 return RedirectToAction("Login", "Home");
 
-            // Redirigir al módulo principal (Citas / Agenda) por defecto
+            var rol = HttpContext.Session.GetInt32("Rol");
+            if (rol == 4) // Si es cliente, denegar acceso al panel de administración
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
             return RedirectToAction("Index", "Citas");
         }
     }

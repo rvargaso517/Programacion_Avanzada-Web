@@ -128,6 +128,7 @@ namespace Tarea1.Controllers
                         await _reservaRepository.MarcarComoPagadaAsync(idReserva);
                     }
                 }
+                TempData["MostrarAlertaPago"] = "true";
                 return RedirectToAction(nameof(Index));
             }
 

@@ -1,4 +1,11 @@
 @model IEnumerable<Tarea1.Models.Dtos.PlanDto>
+@using Tarea1.Models
+@{
+    Layout = "_Layout";
+    var contenido = ViewBag.Contenido as ContenidoPaginaModel ?? new ContenidoPaginaModel();
+    var choseUs = contenido.ChoseUs;
+    var classes = contenido.Classes;
+}
 
     <!-- Hero Section Begin -->
     <section class="hero-section">
@@ -26,48 +33,34 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <span>¿Por qué elegirnos?</span>
-                        <h2>SUPERA TUS LÍMITES</h2>
+                        <span>@(choseUs?.Subtitulo ?? "¿Por qué elegirnos?")</span>
+                        <h2>@(choseUs?.Titulo ?? "SUPERA TUS LÍMITES")</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="cs-item">
-                        <span class="flaticon-034-stationary-bike"></span>
-                        <h4>Equipo moderno</h4>
-                        <p>
-                            Informacion
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="cs-item">
-                        <span class="flaticon-033-juice"></span>
-                        <h4>Plan de nutrición saludable</h4>
-                        <p>
-                            informacion
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="cs-item">
-                        <span class="flaticon-002-dumbell"></span>
-                        <h4>Plan de entrenamiento profesional</h4>
-                        <p>
-                            Informacion
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="cs-item">
-                        <span class="flaticon-014-heart-beat"></span>
-                        <h4>Personalizado para tus necesidades</h4>
-                        <p>
-                            informacion
-                        </p>
-                    </div>
-                </div>
+                @if (choseUs?.Items != null)
+                {
+                    for (int i = 0; i < choseUs.Items.Count; i++)
+                    {
+                        var item = choseUs.Items[i];
+                        var iconClass = i switch
+                        {
+                            0 => "flaticon-034-stationary-bike",
+                            1 => "flaticon-033-juice",
+                            2 => "flaticon-002-dumbell",
+                            3 => "flaticon-014-heart-beat",
+                            _ => "flaticon-002-dumbell"
+                        };
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="cs-item">
+                                <span class="@iconClass"></span>
+                                <h4>@item.Titulo</h4>
+                                <p>@item.Descripcion</p>
+                            </div>
+                        </div>
+                    }
+                }
             </div>
         </div>
     </section>
@@ -78,76 +71,36 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <span>Nuestras Clases</span>
-                        <h2>QUÉ PODEMOS OFRECER</h2>
+                        <span>@(classes?.Subtitulo ?? "Nuestras Clases")</span>
+                        <h2>@(classes?.Titulo ?? "QUÉ PODEMOS OFRECER")</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="class-item">
-                        <div class="ci-pic">
-                            <img src="~/imagenes/class-1.jpg" alt="">
+                @if (classes?.Items != null)
+                {
+                    for (int i = 0; i < classes.Items.Count; i++)
+                    {
+                        var item = classes.Items[i];
+                        var colClass = (i < 3) ? "col-lg-4 col-md-6" : "col-lg-6 col-md-6";
+                        <div class="@colClass">
+                            <div class="class-item">
+                                <div class="ci-pic">
+                                    <img src="@item.Imagen" alt="">
+                                </div>
+                                <div class="ci-text">
+                                    <span>@item.Categoria</span>
+                                    <h5>@item.Titulo</h5>
+                                    <a href="#"><i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ci-text">
-                            <span>FUERZA</span>
-                            <h5>Levantamiento de pesas</h5>
-                            <a href="#"><i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="class-item">
-                        <div class="ci-pic">
-                            <img src="~/imagenes/class-2.jpg" alt="">
-                        </div>
-                        <div class="ci-text">
-                            <span>Cardio</span>
-                            <h5>Ciclismo de interiores</h5>
-                            <a href="#"><i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="class-item">
-                        <div class="ci-pic">
-                            <img src="~/imagenes/class-3.jpg" alt="">
-                        </div>
-                        <div class="ci-text">
-                            <span>FUERZA</span>
-                            <h5>Poder con kettlebell</h5>
-                            <a href="#"><i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="class-item">
-                        <div class="ci-pic">
-                            <img src="~/imagenes/class-4.jpg" alt="">
-                        </div>
-                        <div class="ci-text">
-                            <span>Cardio</span>
-                            <h4>Ciclismo de interiores</h4>
-                            <a href="#"><i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="class-item">
-                        <div class="ci-pic">
-                            <img src="~/imagenes/class-5.jpg" alt="">
-                        </div>
-                        <div class="ci-text">
-                            <span>Entrenamiento</span>
-                            <h4>Boxeo</h4>
-                            <a href="#"><i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
+                    }
+                }
             </div>
         </div>
     </section>
-    <!-- ChoseUs Section End -->
+    <!-- Classes Section End -->
     <!-- Banner Section Begin -->
     <section class="banner-section set-bg" data-setbg="img/banner-bg.jpg">
         <div class="container">
@@ -248,8 +201,8 @@
                 <div class="col-lg-12">
                     <div class="team-title">
                         <div class="section-title">
-                            <span>Nuestro Equipo</span>
-                            <h2>ENTRENA CON EXPERTOS</h2>
+                            <span>@(contenido.Team?.Subtitulo ?? "Nuestro Equipo")</span>
+                            <h2>@(contenido.Team?.Titulo ?? "ENTRENA CON EXPERTOS")</h2>
                         </div>
                         <a href="#" class="primary-btn btn-normal appoinment-btn">cita</a>
                     </div>
@@ -257,54 +210,20 @@
             </div>
             <div class="row">
                 <div class="ts-slider owl-carousel">
-                    <div class="col-lg-4">
-                        <div class="ts-item set-bg" data-setbg="imagenes/team-1.jpg">
-                            <div class="ts_text">
-                                <h4>Athart Rachel</h4>
-                                <span>Entrenador de Gimnasio</span>
+                    @if (contenido.Team?.Items != null)
+                    {
+                        foreach (var trainer in contenido.Team.Items)
+                        {
+                            <div class="col-lg-4">
+                                <div class="ts-item set-bg" data-setbg="@trainer.Imagen">
+                                    <div class="ts_text">
+                                        <h4>@trainer.Nombre</h4>
+                                        <span>@trainer.Especialidad</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="ts-item set-bg" data-setbg="imagenes/team-2.jpg">
-                            <div class="ts_text">
-                                <h4>Athart Rachel</h4>
-                                <span>Entrenador de Gimnasio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="ts-item set-bg" data-setbg="imagenes/team-3.jpg">
-                            <div class="ts_text">
-                                <h4>Athart Rachel</h4>
-                                <span>Entrenador de Gimnasio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="ts-item set-bg" data-setbg="imagenes/team-4.jpg">
-                            <div class="ts_text">
-                                <h4>Athart Rachel</h4>
-                                <span>Entrenador de Gimnasio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="ts-item set-bg" data-setbg="imagenes/team-5.jpg">
-                            <div class="ts_text">
-                                <h4>Athart Rachel</h4>
-                                <span>Entrenador de Gimnasio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="ts-item set-bg" data-setbg="imagenes/team-6.jpg">
-                            <div class="ts_text">
-                                <h4>Athart Rachel</h4>
-                                <span>Entrenador de Gimnasio</span>
-                            </div>
-                        </div>
-                    </div>
+                        }
+                    }
                 </div>
             </div>
         </div>

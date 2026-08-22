@@ -11,10 +11,12 @@ namespace GymManagement_API.Controllers
     public class ClientesController : ControllerBase
     {
         private readonly IConfiguration _config;
+        private readonly Services.EmailService _emailService;
 
-        public ClientesController(IConfiguration config)
+        public ClientesController(IConfiguration config, Services.EmailService emailService)
         {
             _config = config;
+            _emailService = emailService;
         }
 
         [HttpGet("ListarClientes")]
@@ -81,6 +83,27 @@ namespace GymManagement_API.Controllers
                 _config.GetConnectionString("DefaultConnection"));
             context.Open();
 
+            // Validar si la cédula ya existe
+            var cedulaExiste = context.QueryFirstOrDefault<int>(
+                "SELECT COUNT(1) FROM dbo.Clientes WHERE Cedula = @Cedula",
+                new { Cedula = request.Cedula });
+            if (cedulaExiste > 0)
+            {
+                return BadRequest("La cédula ya está registrada.");
+            }
+
+            // Validar si el correo ya existe en Usuarios
+            if (!string.IsNullOrEmpty(request.Correo))
+            {
+                var correoExiste = context.QueryFirstOrDefault<int>(
+                    "SELECT COUNT(1) FROM dbo.Usuarios WHERE Correo = @Correo",
+                    new { Correo = request.Correo });
+                if (correoExiste > 0)
+                {
+                    return BadRequest("El correo ya está registrado.");
+                }
+            }
+
             var parameters = new DynamicParameters();
             parameters.Add("@Nombre", request.Nombre);
             parameters.Add("@Apellido", request.Apellido);
@@ -94,6 +117,37 @@ namespace GymManagement_API.Controllers
                 "dbo.sp_Cliente_Crear",
                 parameters,
                 commandType: CommandType.StoredProcedure);
+
+            if (id > 0 && !string.IsNullOrEmpty(request.Correo))
+            {
+                try
+                {
+                    // Generar contraseña temporal
+                    var random = new Random();
+                    var passwordTemporal = $"Gym{random.Next(1000, 9999)}*";
+                    var passwordHash = BCrypt.Net.BCrypt.HashPassword(passwordTemporal);
+
+                    // Crear usuario en la tabla Usuarios usando sp_Usuario_Crear
+                    var userParams = new DynamicParameters();
+                    userParams.Add("@IdRol", 4); // Rol 4 = Cliente
+                    userParams.Add("@Nombre", $"{request.Nombre} {request.Apellido}");
+                    userParams.Add("@Correo", request.Correo);
+                    userParams.Add("@PasswordHash", passwordHash);
+                    userParams.Add("@Estado", true);
+
+                    context.Execute(
+                        "dbo.sp_Usuario_Crear",
+                        userParams,
+                        commandType: CommandType.StoredProcedure);
+
+                    // Enviar correo con la contraseña temporal
+                    _emailService.EnviarPasswordTemporal(request.Correo, $"{request.Nombre} {request.Apellido}", passwordTemporal);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error al crear el usuario o enviar el correo: {ex.Message}");
+                }
+            }
 
             return Ok(new { IdCliente = id, Success = true });
         }

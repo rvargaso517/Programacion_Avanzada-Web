@@ -24,7 +24,11 @@
     <link rel="stylesheet" href="~/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="~/css/style.css" type="text/css">
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true">
-    @if (Context.Request.Path != "/" && Context.Request.Path != "/Home" && Context.Request.Path != "/Home/Index")
+    @{
+        var requestPath = Context.Request.Path.Value?.ToLower() ?? "";
+        bool isLanding = requestPath == "/" || requestPath == "/home" || requestPath == "/home/index";
+    }
+    @if (!isLanding)
     {
         <style>
             body {
@@ -58,10 +62,10 @@
         <nav class="canvas-menu mobile-menu">
             <ul>
                 <li><a asp-controller="Home" asp-action="Index">Inicio</a></li>
-                <li><a href="#about">Sobre Nosotros</a></li>
-                <li><a href="#classes">Clases</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#team">Nuestro Equipo</a></li>
+                <li><a href="@Url.Action("Index", "Home")#about">Sobre Nosotros</a></li>
+                <li><a href="@Url.Action("Index", "Home")#classes">Clases</a></li>
+                <li><a href="@Url.Action("Index", "Home")#services">Servicios</a></li>
+                <li><a href="@Url.Action("Index", "Home")#team">Nuestro Equipo</a></li>
                 @if (Context.Session.GetString("Autenticado") == "1")
                 {
                     <li><a asp-action="Index" asp-controller="Citas">Mi Agenda</a></li>
@@ -106,7 +110,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="logo">
-                        <a href="./index.html">
+                        <a asp-controller="Home" asp-action="Index">
                             <img src="~/imagenes/logo.png" alt="">
                         </a>
                     </div>
@@ -115,10 +119,10 @@
                     <nav class="nav-menu">
                         <ul>
                             <li class="active"><a asp-controller="Home" asp-action="Index">Inicio</a></li>
-                            <li><a href="#about">Sobre Nosotros</a></li>
-                            <li><a href="#classes">Clases</a></li>
-                            <li><a href="#services">Servicios</a></li>
-                            <li><a href="#team">Nuestro Equipo</a></li>
+                            <li><a href="@Url.Action("Index", "Home")#about">Sobre Nosotros</a></li>
+                            <li><a href="@Url.Action("Index", "Home")#classes">Clases</a></li>
+                            <li><a href="@Url.Action("Index", "Home")#services">Servicios</a></li>
+                            <li><a href="@Url.Action("Index", "Home")#team">Nuestro Equipo</a></li>
                             @if (Context.Session.GetString("Autenticado") == "1")
                             {
                                 <li><a asp-action="Index" asp-controller="Citas">Mi Agenda</a></li>
@@ -150,16 +154,16 @@
                             <li>
                                 <a href="#">Páginas</a>
                                 <ul class="dropdown">
-                                    <li><a href="#about">Sobre nosotros</a></li>
-                                    <li><a href="#classes">Horario de clases</a></li>
-                                    <li><a href="#classes">Calcular IMC</a></li>
-                                    <li><a href="#team">Nuestro equipo</a></li>
-                                    <li><a href="#services">Servicios</a></li>
-                                    <li><a href="#contact">Contacto</a></li>
+                                    <li><a href="@Url.Action("Index", "Home")#about">Sobre nosotros</a></li>
+                                    <li><a href="@Url.Action("Index", "Home")#classes">Horario de clases</a></li>
+                                    <li><a href="@Url.Action("Index", "Home")#classes">Calcular IMC</a></li>
+                                    <li><a href="@Url.Action("Index", "Home")#team">Nuestro equipo</a></li>
+                                    <li><a href="@Url.Action("Index", "Home")#services">Servicios</a></li>
+                                    <li><a href="@Url.Action("Index", "Home")#contact">Contacto</a></li>
                                     <li><a asp-action="Login" asp-controller="Home">Iniciar Sesión</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./contact.html">Contacto</a></li>
+                            <li><a href="@Url.Action("Index", "Home")#contact">Contacto</a></li>
                         </ul>
 
                     </nav>

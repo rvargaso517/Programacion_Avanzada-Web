@@ -248,3 +248,21 @@
     </div>
 
 </div>
+
+@section Scripts {
+    @if (TempData["MostrarAlertaPago"] != null)
+    {
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                Swal.fire({
+                    title: '¡Pago Exitoso!',
+                    text: 'El pago se ha registrado correctamente.',
+                    icon: 'success',
+                    confirmButtonColor: '#f36100',
+                    confirmButtonText: 'Aceptar'
+                });
+            });
+        </script>
+    }
+}

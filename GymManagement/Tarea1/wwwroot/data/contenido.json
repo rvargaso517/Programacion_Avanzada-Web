@@ -1,0 +1,91 @@
+{
+  "ChoseUs": {
+    "Titulo": "test",
+    "Subtitulo": "test",
+    "Items": [
+      {
+        "Titulo": "test",
+        "Descripcion": "test \r\ntest\r\ntest\r\ntest"
+      },
+      {
+        "Titulo": "test",
+        "Descripcion": "test"
+      },
+      {
+        "Titulo": "test",
+        "Descripcion": "test"
+      },
+      {
+        "Titulo": "locochon",
+        "Descripcion": "test"
+      }
+    ]
+  },
+  "Classes": {
+    "Titulo": "test",
+    "Subtitulo": "test",
+    "Items": [
+      {
+        "Categoria": "test",
+        "Titulo": "test",
+        "Imagen": "/imagenes/class_upload_1_20260821_194238.png"
+      },
+      {
+        "Categoria": "test",
+        "Titulo": "test",
+        "Imagen": "/imagenes/class-2.jpg"
+      },
+      {
+        "Categoria": "test",
+        "Titulo": "test",
+        "Imagen": "/imagenes/class-3.jpg"
+      },
+      {
+        "Categoria": "test",
+        "Titulo": "test",
+        "Imagen": "/imagenes/class-4.jpg"
+      },
+      {
+        "Categoria": "test",
+        "Titulo": "test",
+        "Imagen": "/imagenes/class-5.jpg"
+      }
+    ]
+  },
+  "Team": {
+    "Titulo": "ENTRENA CON EXPERTOS",
+    "Subtitulo": "Nuestro Equipo",
+    "Items": [
+      {
+        "Nombre": "test",
+        "Especialidad": "test",
+        "Imagen": "/imagenes/team_upload_1_20260821_195416.png"
+      },
+      {
+        "Nombre": "Athart Rachel",
+        "Especialidad": "Entrenador de Gimnasio",
+        "Imagen": "/imagenes/team-2.jpg"
+      },
+      {
+        "Nombre": "Athart Rachel",
+        "Especialidad": "Entrenador de Gimnasio",
+        "Imagen": "/imagenes/team-3.jpg"
+      },
+      {
+        "Nombre": "Athart Rachel",
+        "Especialidad": "Entrenador de Gimnasio",
+        "Imagen": "/imagenes/team-4.jpg"
+      },
+      {
+        "Nombre": "Athart Rachel",
+        "Especialidad": "Entrenador de Gimnasio",
+        "Imagen": "/imagenes/team-5.jpg"
+      },
+      {
+        "Nombre": "Athart Rachel",
+        "Especialidad": "Entrenador de Gimnasio",
+        "Imagen": "/imagenes/team-6.jpg"
+      }
+    ]
+  }
+}

@@ -1,21 +1,30 @@
-## Ignore Visual Studio temporary files, build results, and user settings
+# Standard .NET gitignore
+[Bb]in/
+[Oo]bj/
+[Tt]emp/
 .vs/
-[Db]in/
-[Ob]j/
+.idea/
+.vscode/
 *.user
 *.userosscache
 *.suo
 *.userprefs
 *.pidb
 *.ipch
-
-# User-specific files
-*.rsuser
-*.suo
-*.user
-*.userosscache
 *.sln.docstates
-
-# OS files
 .DS_Store
 Thumbs.db
+log.txt
+*.log
+
+# User Secrets
+appsettings.local.json
+secrets.json
+.microsoft.dotnet.openapi.targets
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
