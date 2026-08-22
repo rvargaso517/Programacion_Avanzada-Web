@@ -66,7 +66,7 @@ namespace Tarea1.Controllers
 
             // Cargar roles y permisos
             using var db = _factory.CreateConnection();
-            var roles = await db.QueryAsync<dynamic>("SELECT IdRol, Nombre, Descripcion FROM dbo.Roles");
+            var roles = await db.QueryAsync<dynamic>("EXEC dbo.sp_Rol_Listar");
             ViewBag.Roles = roles;
             ViewBag.Permisos = PermisosHelper.CargarPermisos();
             ViewBag.Menus = PermisosHelper.ListarTodosLosMenus();
